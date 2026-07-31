@@ -1,0 +1,2620 @@
+{
+ "count": 230,
+ "effects": {
+  "melvorD:StunImmunity": {
+   "id": "melvorD:StunImmunity",
+   "name": "Stun Immunity",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:StunImmune"
+   ]
+  },
+  "melvorD:SleepImmunity": {
+   "id": "melvorD:SleepImmunity",
+   "name": "Sleep Immunity",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:SleepImmune"
+   ]
+  },
+  "melvorD:Drowsy": {
+   "id": "melvorD:Drowsy",
+   "name": "Drowsy",
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": 10,
+   "effect_groups": [
+    "melvorD:Drowsy"
+   ]
+  },
+  "melvorD:FearImmunity": {
+   "id": "melvorD:FearImmunity",
+   "name": "Fear Immunity",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:FearImmune"
+   ]
+  },
+  "melvorD:DecreasedEvasionStacking": {
+   "id": "melvorD:DecreasedEvasionStacking",
+   "name": "Evasion Decreased",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorD:Affliction": {
+   "id": "melvorD:Affliction",
+   "name": "Affliction",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorD:Burn": {
+   "id": "melvorD:Burn",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "character": "Target",
+       "roll": false,
+       "maxRoll": "CurrentHP",
+       "maxPercent": 15
+      }
+     ],
+     "applyDamageModifiers": true,
+     "applyTypeModifiers": "Burn",
+     "applyResistance": true,
+     "damageCap": 1000
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:Frostburn": {
+   "id": "melvorD:Frostburn",
+   "name": "Frostburn",
+   "duration_turns": 2,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "character": "Target",
+       "roll": false,
+       "maxRoll": "CurrentHP",
+       "maxPercent": 3
+      }
+     ],
+     "applyResistance": true,
+     "damageCap": 200
+    }
+   ],
+   "attack_interval_modifier": 10,
+   "effect_groups": [
+    "melvorD:Frostburn",
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorD:Poison": {
+   "id": "melvorD:Poison",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "character": "Target",
+       "roll": false,
+       "maxRoll": "MaxHP",
+       "maxPercent": 10
+      }
+     ],
+     "applyDamageModifiers": true,
+     "applyTypeModifiers": "Poison",
+     "applyResistance": true,
+     "damageCap": 1000
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:DeadlyPoison": {
+   "id": "melvorD:DeadlyPoison",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "character": "Target",
+       "roll": false,
+       "maxRoll": "MaxHP",
+       "maxPercent": 25
+      }
+     ],
+     "applyDamageModifiers": true,
+     "applyTypeModifiers": "DeadlyPoison",
+     "applyResistance": true,
+     "damageCap": 1000
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:Bleed100": {
+   "id": "melvorD:Bleed100",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "character": "Attacker",
+       "maxRoll": "DamageDealt",
+       "maxPercent": 100,
+       "roll": false
+      }
+     ],
+     "applyDamageModifiers": true,
+     "applyTypeModifiers": "Bleed",
+     "applyResistance": true
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:Bleed200": {
+   "id": "melvorD:Bleed200",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "character": "Attacker",
+       "maxRoll": "DamageDealt",
+       "maxPercent": 200,
+       "roll": false
+      }
+     ],
+     "applyDamageModifiers": true,
+     "applyTypeModifiers": "Bleed",
+     "applyResistance": true
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:Bleed400": {
+   "id": "melvorD:Bleed400",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "character": "Attacker",
+       "maxRoll": "DamageDealt",
+       "maxPercent": 400,
+       "roll": false
+      }
+     ],
+     "applyDamageModifiers": true,
+     "applyTypeModifiers": "Bleed",
+     "applyResistance": true
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:Stun": {
+   "id": "melvorD:Stun",
+   "name": null,
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:Freeze": {
+   "id": "melvorD:Freeze",
+   "name": null,
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:Crystallize": {
+   "id": "melvorD:Crystallize",
+   "name": null,
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:Sleep": {
+   "id": "melvorD:Sleep",
+   "name": null,
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:Fear": {
+   "id": "melvorD:Fear",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:Slow": {
+   "id": "melvorD:Slow",
+   "name": null,
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:EndOfTurnCurrentHealing": {
+   "id": "melvorD:EndOfTurnCurrentHealing",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:EndOfTurnMaxHealing": {
+   "id": "melvorD:EndOfTurnMaxHealing",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:SlayerEndOfTurnCurrentHealing": {
+   "id": "melvorD:SlayerEndOfTurnCurrentHealing",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:CurrentHitpointsHeal": {
+   "id": "melvorD:CurrentHitpointsHeal",
+   "name": "Heal",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:BarrierRegenDebuff": {
+   "id": "melvorD:BarrierRegenDebuff",
+   "name": "Barrier Regeneration Debuff",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": 5,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorD:EndOfTurnMaxBarrierRegen": {
+   "id": "melvorD:EndOfTurnMaxBarrierRegen",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorD:XmasDeath0": {
+   "id": "melvorD:XmasDeath0",
+   "name": "Candy Crush",
+   "duration_turns": 69,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorD:RapidFire0": {
+   "id": "melvorD:RapidFire0",
+   "name": "Rapid Fire",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": -10,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorD:Fleetness0": {
+   "id": "melvorD:Fleetness0",
+   "name": "Fleetness",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -10,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorD:OnTheHunt0": {
+   "id": "melvorD:OnTheHunt0",
+   "name": "On The Hunt",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorD:Onslaught0": {
+   "id": "melvorD:Onslaught0",
+   "name": "Onslaught",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorD:EmeraldShots0": {
+   "id": "melvorD:EmeraldShots0",
+   "name": "Emerald Shots",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorD:TiltedShot0": {
+   "id": "melvorD:TiltedShot0",
+   "name": "Tilted Shot",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorD:StoneBarrier0": {
+   "id": "melvorD:StoneBarrier0",
+   "name": "Stone Barrier",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorD:Heal0": {
+   "id": "melvorD:Heal0",
+   "name": "Heal",
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "totalHealing",
+     "damage": [
+      {
+       "roll": false,
+       "character": "Attacker",
+       "maxRoll": "MaxHP",
+       "maxPercent": 150
+      }
+     ]
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorF:Undead_Enhancement_Superior": {
+   "id": "melvorF:Undead_Enhancement_Superior",
+   "name": "Undead Enhancement (Superior)",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:Magic_Enhancement_Superior": {
+   "id": "melvorF:Magic_Enhancement_Superior",
+   "name": "Magic Enhancement (Superior)",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:Dragon_Enhancement_Superior": {
+   "id": "melvorF:Dragon_Enhancement_Superior",
+   "name": "Dragon Enhancement (Superior)",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:Gods_Enhancement_Superior": {
+   "id": "melvorF:Gods_Enhancement_Superior",
+   "name": "Gods Enhancement (Superior)",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:RandomEvasion": {
+   "id": "melvorF:RandomEvasion",
+   "name": "Random Evasion",
+   "duration_turns": 0,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:ModifierSlow": {
+   "id": "melvorF:ModifierSlow",
+   "name": null,
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorF:BleedReflect": {
+   "id": "melvorF:BleedReflect",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "character": "Attacker",
+       "maxRoll": "DamageTaken",
+       "maxPercent": 300,
+       "roll": false
+      }
+     ],
+     "applyDamageModifiers": true,
+     "applyTypeModifiers": "Bleed",
+     "applyResistance": true
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorF:Nulled": {
+   "id": "melvorF:Nulled",
+   "name": "Nulled",
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:BlindingI": {
+   "id": "melvorF:BlindingI",
+   "name": "Blinding I",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:SoulSplitI": {
+   "id": "melvorF:SoulSplitI",
+   "name": "Soul Split I",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:WeakeningI": {
+   "id": "melvorF:WeakeningI",
+   "name": "Weakening I",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:AnguishI": {
+   "id": "melvorF:AnguishI",
+   "name": "Anguish I",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:BlindingII": {
+   "id": "melvorF:BlindingII",
+   "name": "Blinding II",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:SoulSplitII": {
+   "id": "melvorF:SoulSplitII",
+   "name": "Soul Split II",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:WeakeningII": {
+   "id": "melvorF:WeakeningII",
+   "name": "Weakening II",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:Confusion": {
+   "id": "melvorF:Confusion",
+   "name": "Confusion",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:AnguishII": {
+   "id": "melvorF:AnguishII",
+   "name": "Anguish II",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:BlindingIII": {
+   "id": "melvorF:BlindingIII",
+   "name": "Blinding III",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:SoulSplitIII": {
+   "id": "melvorF:SoulSplitIII",
+   "name": "Soul Split III",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:WeakeningIII": {
+   "id": "melvorF:WeakeningIII",
+   "name": "Weakening III",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:AnguishIII": {
+   "id": "melvorF:AnguishIII",
+   "name": "Anguish III",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:Decay": {
+   "id": "melvorF:Decay",
+   "name": "Decay",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:MarkOfDeath": {
+   "id": "melvorF:MarkOfDeath",
+   "name": "Mark of Death",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:Flurry0": {
+   "id": "melvorF:Flurry0",
+   "name": "Flurry",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:IcePrison1": {
+   "id": "melvorF:IcePrison1",
+   "name": "Ice Prison",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:ImpairingShot0": {
+   "id": "melvorF:ImpairingShot0",
+   "name": "Impairing Shot",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:Quicksand0": {
+   "id": "melvorF:Quicksand0",
+   "name": "Quicksand",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:Sandblast0": {
+   "id": "melvorF:Sandblast0",
+   "name": "Sandblast",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:BleedDeadlyCut": {
+   "id": "melvorF:BleedDeadlyCut",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "character": "Target",
+       "roll": false,
+       "maxRoll": "Fixed",
+       "maxPercent": 20
+      },
+      {
+       "character": "Target",
+       "roll": false,
+       "maxRoll": "MaxHP",
+       "maxPercent": 4
+      }
+     ],
+     "applyDamageModifiers": true,
+     "applyTypeModifiers": "Bleed",
+     "applyResistance": true
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorF:Rend0": {
+   "id": "melvorF:Rend0",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "character": "Attacker",
+       "maxRoll": "Rend",
+       "maxPercent": 400,
+       "roll": false
+      }
+     ],
+     "applyDamageModifiers": true,
+     "applyTypeModifiers": "Bleed",
+     "applyResistance": true
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorF:Rend1": {
+   "id": "melvorF:Rend1",
+   "name": "Rend",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -20,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:TidalWave0": {
+   "id": "melvorF:TidalWave0",
+   "name": "Tidal Wave",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:OceanSong0": {
+   "id": "melvorF:OceanSong0",
+   "name": "Ocean Song",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:Shockwave0": {
+   "id": "melvorF:Shockwave0",
+   "name": "Shockwave",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:Cyclone0": {
+   "id": "melvorF:Cyclone0",
+   "name": "Cyclone",
+   "duration_turns": 0,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:StoneWall0": {
+   "id": "melvorF:StoneWall0",
+   "name": "Stone Wall",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:CurseofFear0": {
+   "id": "melvorF:CurseofFear0",
+   "name": "Curse of Fear",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:HunterExpertise0": {
+   "id": "melvorF:HunterExpertise0",
+   "name": "Hunter Expertise",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": -40,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:Agility0": {
+   "id": "melvorF:Agility0",
+   "name": "Agility",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -20,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:Elusiveness0": {
+   "id": "melvorF:Elusiveness0",
+   "name": "Elusiveness",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -30,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:CurseoftheDeep0": {
+   "id": "melvorF:CurseoftheDeep0",
+   "name": "Curse of the Deep",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:BurningTrail0": {
+   "id": "melvorF:BurningTrail0",
+   "name": "Burning Trail",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:Shadowstep0": {
+   "id": "melvorF:Shadowstep0",
+   "name": "Shadowstep",
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": -20,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:ShadowBurst0": {
+   "id": "melvorF:ShadowBurst0",
+   "name": "Shadow Burst",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:IntotheMist0": {
+   "id": "melvorF:IntotheMist0",
+   "name": "Into the Mist",
+   "duration_turns": 0,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:IntotheMist1": {
+   "id": "melvorF:IntotheMist1",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "totalHealing",
+     "damage": [
+      {
+       "roll": false,
+       "character": "Attacker",
+       "maxRoll": "MaxHP",
+       "maxPercent": 10
+      }
+     ]
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorF:FragileMind0": {
+   "id": "melvorF:FragileMind0",
+   "name": "Fragile Mind",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:UnknownThreat0": {
+   "id": "melvorF:UnknownThreat0",
+   "name": "Unknown Threat",
+   "duration_turns": 0,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:UnknownThreat1": {
+   "id": "melvorF:UnknownThreat1",
+   "name": "Unknown Threat",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -20,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:MistWalk0": {
+   "id": "melvorF:MistWalk0",
+   "name": "Mist Walk",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:MistWalk1": {
+   "id": "melvorF:MistWalk1",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "totalHealing",
+     "damage": [
+      {
+       "roll": false,
+       "character": "Attacker",
+       "maxRoll": "MaxHP",
+       "maxPercent": 20
+      }
+     ]
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorF:PenetratingSpikeShot0": {
+   "id": "melvorF:PenetratingSpikeShot0",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "roll": false,
+       "maxRoll": "Poisoned",
+       "maxPercent": 90,
+       "character": "Target"
+      }
+     ],
+     "applyDamageModifiers": true,
+     "applyTypeModifiers": "Bleed",
+     "applyResistance": true
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorF:Burrow0": {
+   "id": "melvorF:Burrow0",
+   "name": "Burrow",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:CrushingClaws0": {
+   "id": "melvorF:CrushingClaws0",
+   "name": "Crushing Claws",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:Cleave0": {
+   "id": "melvorF:Cleave0",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "roll": false,
+       "maxRoll": "Fixed",
+       "maxPercent": 70,
+       "character": "Target"
+      }
+     ],
+     "applyDamageModifiers": true,
+     "applyTypeModifiers": "Bleed",
+     "applyResistance": true
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorF:BoneCrush0": {
+   "id": "melvorF:BoneCrush0",
+   "name": "Bone Crush",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -10,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:SpikedTailWhip0": {
+   "id": "melvorF:SpikedTailWhip0",
+   "name": "Spiked Tail Whip",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorF:SwiftAttack0": {
+   "id": "melvorF:SwiftAttack0",
+   "name": "Swift Attack",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:BarragePlayer0": {
+   "id": "melvorF:BarragePlayer0",
+   "name": "Barrage",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:Absorbing_Shield": {
+   "id": "melvorF:Absorbing_Shield",
+   "name": "Absorbing Shield",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:Split0": {
+   "id": "melvorF:Split0",
+   "name": "Split",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorF:SlimedRegen": {
+   "id": "melvorF:SlimedRegen",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "healingPerProc",
+     "damage": [
+      {
+       "roll": false,
+       "character": "Attacker",
+       "maxRoll": "CurrentHP",
+       "maxPercent": 1
+      }
+     ]
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorF:DisableDamageForAttack": {
+   "id": "melvorF:DisableDamageForAttack",
+   "name": "",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorF:BigOlRon": {
+   "id": "melvorF:BigOlRon",
+   "name": "Big ol Ron",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:Shock": {
+   "id": "melvorTotH:Shock",
+   "name": "Shocked",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:DarkBlade": {
+   "id": "melvorTotH:DarkBlade",
+   "name": "Dark Blade",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:Assassin": {
+   "id": "melvorTotH:Assassin",
+   "name": "Assassin",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:Duality": {
+   "id": "melvorTotH:Duality",
+   "name": "Duality",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -50,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:GrowingMadness": {
+   "id": "melvorTotH:GrowingMadness",
+   "name": "Growing Madness",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": -2,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:MomentInTime": {
+   "id": "melvorTotH:MomentInTime",
+   "name": "Moment In Time",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": -2,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:ReignOverTime": {
+   "id": "melvorTotH:ReignOverTime",
+   "name": "Reign Over Time",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": -2,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:ShadowCloak": {
+   "id": "melvorTotH:ShadowCloak",
+   "name": "Shadow Cloak",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:Increased5DR": {
+   "id": "melvorTotH:Increased5DR",
+   "name": "Protected",
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:AbsorbingSkin": {
+   "id": "melvorTotH:AbsorbingSkin",
+   "name": "AbsorbingSkin",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:Rage": {
+   "id": "melvorTotH:Rage",
+   "name": "Rage",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": -2,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:GauntletsOfRage": {
+   "id": "melvorTotH:GauntletsOfRage",
+   "name": "Rage",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": -2,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:Madness": {
+   "id": "melvorTotH:Madness",
+   "name": "Madness",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:Torment": {
+   "id": "melvorTotH:Torment",
+   "name": "Torment",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:Despair": {
+   "id": "melvorTotH:Despair",
+   "name": "Despair",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:SharpWing0": {
+   "id": "melvorTotH:SharpWing0",
+   "name": "Sharp Wing",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": -20,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:FullBloom0": {
+   "id": "melvorTotH:FullBloom0",
+   "name": "Full Bloom",
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:FullBloom1": {
+   "id": "melvorTotH:FullBloom1",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "totalHealing",
+     "damage": [
+      {
+       "roll": false,
+       "character": "Attacker",
+       "maxRoll": "CurrentHP",
+       "maxPercent": 7.5
+      }
+     ]
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorTotH:FlameRush0": {
+   "id": "melvorTotH:FlameRush0",
+   "name": "Flame Rush",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -20,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:Headbutt0": {
+   "id": "melvorTotH:Headbutt0",
+   "name": "Headbutt",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": -20,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:MasterOfHeat0": {
+   "id": "melvorTotH:MasterOfHeat0",
+   "name": "Master of Heat",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:MasterOfHeat1": {
+   "id": "melvorTotH:MasterOfHeat1",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "totalHealing",
+     "damage": [
+      {
+       "roll": false,
+       "character": "Attacker",
+       "maxRoll": "CurrentHP",
+       "maxPercent": 20
+      }
+     ]
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorTotH:BurningFury0": {
+   "id": "melvorTotH:BurningFury0",
+   "name": "Burning Fury",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": -33,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:WardOfFlame0": {
+   "id": "melvorTotH:WardOfFlame0",
+   "name": "Ward of Flame",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:IceReanimation0": {
+   "id": "melvorTotH:IceReanimation0",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "totalHealing",
+     "damage": [
+      {
+       "roll": false,
+       "character": "Attacker",
+       "maxRoll": "MaxHP",
+       "maxPercent": 5
+      }
+     ]
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorTotH:ElectricCharge0": {
+   "id": "melvorTotH:ElectricCharge0",
+   "name": "Electric Charge",
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:ElectricCharge1": {
+   "id": "melvorTotH:ElectricCharge1",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "totalHealing",
+     "damage": [
+      {
+       "roll": false,
+       "character": "Attacker",
+       "maxRoll": "MaxHP",
+       "maxPercent": 30
+      }
+     ]
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorTotH:Predator0": {
+   "id": "melvorTotH:Predator0",
+   "name": "Predator",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:WaterDance0": {
+   "id": "melvorTotH:WaterDance0",
+   "name": "Water Dance",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -20,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:CaughtInTheWeb0": {
+   "id": "melvorTotH:CaughtInTheWeb0",
+   "name": "Caught in the Web",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -40,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:BlindingBeams0": {
+   "id": "melvorTotH:BlindingBeams0",
+   "name": "Blinding Beams",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:ShadeSummon0": {
+   "id": "melvorTotH:ShadeSummon0",
+   "name": "Shade Summon",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:GreaterShadeSummon0": {
+   "id": "melvorTotH:GreaterShadeSummon0",
+   "name": "Greater Shade Summon",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:GreaterShadeSummonEnemy0": {
+   "id": "melvorTotH:GreaterShadeSummonEnemy0",
+   "name": "Greater Shade Summon",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:Darkblade0": {
+   "id": "melvorTotH:Darkblade0",
+   "name": "Dark Blade",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:PhantomSummon0": {
+   "id": "melvorTotH:PhantomSummon0",
+   "name": "Phantom Summon",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:FeatherBarrier0": {
+   "id": "melvorTotH:FeatherBarrier0",
+   "name": "Feather Barrier",
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:RapidParry0": {
+   "id": "melvorTotH:RapidParry0",
+   "name": "Rapid Parry",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:FullCharge1": {
+   "id": "melvorTotH:FullCharge1",
+   "name": "Full Charge",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -30,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:WindBarrier0": {
+   "id": "melvorTotH:WindBarrier0",
+   "name": "Wind Barrier",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:Battlecry0": {
+   "id": "melvorTotH:Battlecry0",
+   "name": "Battlecry",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:Battlecry1": {
+   "id": "melvorTotH:Battlecry1",
+   "name": "Battlecry",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -30,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:Alacrity0": {
+   "id": "melvorTotH:Alacrity0",
+   "name": "Alacrity",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -30,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:DejaVu0": {
+   "id": "melvorTotH:DejaVu0",
+   "name": "Deja-Vu",
+   "duration_turns": 4,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:PowerOfTheMist0": {
+   "id": "melvorTotH:PowerOfTheMist0",
+   "name": "Power of the Mist",
+   "duration_turns": 0,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:NaturesBloom0": {
+   "id": "melvorTotH:NaturesBloom0",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "totalHealing",
+     "damage": [
+      {
+       "roll": false,
+       "character": "Attacker",
+       "maxRoll": "CurrentHP",
+       "maxPercent": 30
+      }
+     ]
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorTotH:Reduction0": {
+   "id": "melvorTotH:Reduction0",
+   "name": "Reduction",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:DarkBladePlayer0": {
+   "id": "melvorTotH:DarkBladePlayer0",
+   "name": "Dark Blade",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:EtheralArrows0": {
+   "id": "melvorTotH:EtheralArrows0",
+   "name": "Ethereal Arrows",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:CorundumWounds0": {
+   "id": "melvorTotH:CorundumWounds0",
+   "name": "CorundumWounds",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:AugiteCrystallization0": {
+   "id": "melvorTotH:AugiteCrystallization0",
+   "name": "Augite Crystallization",
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:DivineBreaker0": {
+   "id": "melvorTotH:DivineBreaker0",
+   "name": "Divine Breaker",
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:ElderwoodPoison1": {
+   "id": "melvorTotH:ElderwoodPoison1",
+   "name": "Elderwood Poison",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": 5,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:RevenantHunter0": {
+   "id": "melvorTotH:RevenantHunter0",
+   "name": "Revenant Hunter",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:CarrionMarker0": {
+   "id": "melvorTotH:CarrionMarker0",
+   "name": "Carrion Marker",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:ShadeSummonEnemy0": {
+   "id": "melvorTotH:ShadeSummonEnemy0",
+   "name": "Shade Summon",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:PhantomSummonPlayer0": {
+   "id": "melvorTotH:PhantomSummonPlayer0",
+   "name": "Phantom Summon",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:OceanSongEnemy0": {
+   "id": "melvorTotH:OceanSongEnemy0",
+   "name": "Ocean Song",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:ImpairingShotEnemy0": {
+   "id": "melvorTotH:ImpairingShotEnemy0",
+   "name": "Impairing Shot",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:FlurryEnemy0": {
+   "id": "melvorTotH:FlurryEnemy0",
+   "name": "Flurry",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorTotH:TidalWaveEnemy0": {
+   "id": "melvorTotH:TidalWaveEnemy0",
+   "name": "Tidal Wave",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorTotH:Leviathan": {
+   "id": "melvorTotH:Leviathan",
+   "name": "Spiky Skin",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:Elusive": {
+   "id": "melvorAoD:Elusive",
+   "name": "Elusive Boots",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": -1,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:CrystalSanction": {
+   "id": "melvorAoD:CrystalSanction",
+   "name": "Crystal Sanction",
+   "duration_turns": 0,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:CrystalSanction",
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:WeakeningTouch": {
+   "id": "melvorAoD:WeakeningTouch",
+   "name": "Weakening Touch",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:UnderwaterSlow": {
+   "id": "melvorAoD:UnderwaterSlow",
+   "name": "Underwater",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": 1,
+   "effect_groups": [
+    "melvorD:Slow",
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:UnderwaterAttackSpeed": {
+   "id": "melvorAoD:UnderwaterAttackSpeed",
+   "name": "Underwater",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": -1,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:Cleansed": {
+   "id": "melvorAoD:Cleansed",
+   "name": "Cleansed",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:IncreasedMaxHitpoints": {
+   "id": "melvorAoD:IncreasedMaxHitpoints",
+   "name": "Puppet Master",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:Blind": {
+   "id": "melvorAoD:Blind",
+   "name": "Blind",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:MagicMasterRelic": {
+   "id": "melvorAoD:MagicMasterRelic",
+   "name": "Magic Master Relic",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:AttackMasterRelic": {
+   "id": "melvorAoD:AttackMasterRelic",
+   "name": "Attack Master Relic",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:StrengthMasterRelic": {
+   "id": "melvorAoD:StrengthMasterRelic",
+   "name": "Rage",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": -2,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:Fatigue": {
+   "id": "melvorAoD:Fatigue",
+   "name": "Fatigue",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": 5,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:Petrified": {
+   "id": "melvorAoD:Petrified",
+   "name": "Petrified",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:UnholyMark": {
+   "id": "melvorAoD:UnholyMark",
+   "name": "Unholy Mark",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Stacking",
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:BarrierBleed": {
+   "id": "melvorAoD:BarrierBleed",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "character": "Attacker",
+       "roll": false,
+       "maxRoll": "DamageDealt",
+       "maxPercent": 250
+      }
+     ],
+     "applyDamageModifiers": true,
+     "applyTypeModifiers": "BarrierBleed",
+     "applyResistance": true
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorAoD:BarrierBurn": {
+   "id": "melvorAoD:BarrierBurn",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "character": "Target",
+       "roll": false,
+       "maxRoll": "CurrentHP",
+       "maxPercent": 20
+      }
+     ],
+     "applyDamageModifiers": true,
+     "applyTypeModifiers": "BarrierBurn",
+     "applyResistance": true
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorAoD:CrystalFlurry0": {
+   "id": "melvorAoD:CrystalFlurry0",
+   "name": "Crystal Flurry",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": -10,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:Warhorn0": {
+   "id": "melvorAoD:Warhorn0",
+   "name": "Warhorn",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": -5,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:Flight0": {
+   "id": "melvorAoD:Flight0",
+   "name": "Flight",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -30,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:LullabyOfTheEnchanter1": {
+   "id": "melvorAoD:LullabyOfTheEnchanter1",
+   "name": "Lullaby of the Enchanter",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:RestorationOfTheMind0": {
+   "id": "melvorAoD:RestorationOfTheMind0",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "totalHealing",
+     "damage": [
+      {
+       "roll": false,
+       "character": "Attacker",
+       "maxRoll": "CurrentHP",
+       "maxPercent": 8
+      }
+     ]
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorAoD:DanceOfTheMage0": {
+   "id": "melvorAoD:DanceOfTheMage0",
+   "name": "Dance of the Mage",
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": -15,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:MysticRegen0": {
+   "id": "melvorAoD:MysticRegen0",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "totalHealing",
+     "damage": [
+      {
+       "roll": false,
+       "character": "Attacker",
+       "maxRoll": "MaxHP",
+       "maxPercent": 200
+      }
+     ]
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorAoD:AcidicBlast0": {
+   "id": "melvorAoD:AcidicBlast0",
+   "name": "Acidic Blast",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:CrystalSanction0": {
+   "id": "melvorAoD:CrystalSanction0",
+   "name": "Crystal Sanction",
+   "duration_turns": 0,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:LesserFamiliarAura0": {
+   "id": "melvorAoD:LesserFamiliarAura0",
+   "name": "Lesser Familiar Aura",
+   "duration_turns": 4,
+   "damage_groups": [],
+   "attack_interval_modifier": -10,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:EarthWall0": {
+   "id": "melvorAoD:EarthWall0",
+   "name": "Earth Wall",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:EarthWallPlayer0": {
+   "id": "melvorAoD:EarthWallPlayer0",
+   "name": "Earth Wall",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:SpiritBurn0": {
+   "id": "melvorAoD:SpiritBurn0",
+   "name": "Spirit Burn",
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "total",
+     "damage": [
+      {
+       "roll": false,
+       "character": "Attacker",
+       "maxRoll": "MaxHP",
+       "maxPercent": 200
+      }
+     ],
+     "applyDamageModifiers": true,
+     "applyTypeModifiers": "Burn",
+     "applyResistance": true
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorAoD:MindBarrier0": {
+   "id": "melvorAoD:MindBarrier0",
+   "name": "Mind Barrier",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:Illusion0": {
+   "id": "melvorAoD:Illusion0",
+   "name": "Illusion",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:IllusionPlayer0": {
+   "id": "melvorAoD:IllusionPlayer0",
+   "name": "Illusion",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:Manipulate0": {
+   "id": "melvorAoD:Manipulate0",
+   "name": "Manipulate",
+   "duration_turns": 0,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:Foresight0": {
+   "id": "melvorAoD:Foresight0",
+   "name": "Foresight",
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:ForesightPlayer0": {
+   "id": "melvorAoD:ForesightPlayer0",
+   "name": "Foresight",
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:WaterBarrier0": {
+   "id": "melvorAoD:WaterBarrier0",
+   "name": "Water Barrier",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:WaterBarrierPlayer0": {
+   "id": "melvorAoD:WaterBarrierPlayer0",
+   "name": "Water Barrier",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:HastyAssault0": {
+   "id": "melvorAoD:HastyAssault0",
+   "name": "Hasty Assault",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": -20,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:HastyAssaultPlayer0": {
+   "id": "melvorAoD:HastyAssaultPlayer0",
+   "name": "Hasty Assault",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": -20,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:EradicatingBlast0": {
+   "id": "melvorAoD:EradicatingBlast0",
+   "name": "Eradicating Blast",
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:NullAndCleanse0": {
+   "id": "melvorAoD:NullAndCleanse0",
+   "name": "Null and Cleanse",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:NullAndCleanse1": {
+   "id": "melvorAoD:NullAndCleanse1",
+   "name": "Null and Cleanse",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:NullAndCleanse2": {
+   "id": "melvorAoD:NullAndCleanse2",
+   "name": null,
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "totalHealing",
+     "damage": [
+      {
+       "roll": false,
+       "character": "Attacker",
+       "maxRoll": "CurrentHP",
+       "maxPercent": 10
+      }
+     ]
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": []
+  },
+  "melvorAoD:CrystalLure0": {
+   "id": "melvorAoD:CrystalLure0",
+   "name": "Crystal Lure",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:SharedToxins1": {
+   "id": "melvorAoD:SharedToxins1",
+   "name": "Shared Toxins",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:PoisonHuntsman0": {
+   "id": "melvorAoD:PoisonHuntsman0",
+   "name": "Poison Huntsman",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:PoisonSpikeSkin0": {
+   "id": "melvorAoD:PoisonSpikeSkin0",
+   "name": "Poison Huntsman",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:AgileHunter0": {
+   "id": "melvorAoD:AgileHunter0",
+   "name": "Poison Huntsman",
+   "duration_turns": 2,
+   "damage_groups": [],
+   "attack_interval_modifier": -20,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:EvilMalice0": {
+   "id": "melvorAoD:EvilMalice0",
+   "name": "Evil Malice",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:AngryGrudge0": {
+   "id": "melvorAoD:AngryGrudge0",
+   "name": "Angry Grudge",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:AngryGrudge1": {
+   "id": "melvorAoD:AngryGrudge1",
+   "name": "Angry Grudge",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:ConsumingRage0": {
+   "id": "melvorAoD:ConsumingRage0",
+   "name": "Consuming Rage",
+   "duration_turns": 5,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:ShellBuff0": {
+   "id": "melvorAoD:ShellBuff0",
+   "name": "Shell Buff",
+   "duration_turns": 3,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:AccuracyGem": {
+   "id": "melvorAoD:AccuracyGem",
+   "name": "Accuracy Gem",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:EvasionGem": {
+   "id": "melvorAoD:EvasionGem",
+   "name": "Evasion Gem",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:LifestealGem": {
+   "id": "melvorAoD:LifestealGem",
+   "name": "Lifesteal Gem",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:BurningGem": {
+   "id": "melvorAoD:BurningGem",
+   "name": "Burning Gem",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:PoisonousGem": {
+   "id": "melvorAoD:PoisonousGem",
+   "name": "Poisonous Gem",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:AgileGem": {
+   "id": "melvorAoD:AgileGem",
+   "name": "Agile Gem",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": -0.8,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:ConfusingGem": {
+   "id": "melvorAoD:ConfusingGem",
+   "name": "Confusing Gem",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:DecayingGem": {
+   "id": "melvorAoD:DecayingGem",
+   "name": "Decaying Gem",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:HauntedRing": {
+   "id": "melvorAoD:HauntedRing",
+   "name": "Haunted Ring",
+   "duration_turns": null,
+   "damage_groups": [
+    {
+     "name": "selfDamage",
+     "damage": [
+      {
+       "character": "Attacker",
+       "maxRoll": "CurrentHP",
+       "maxPercent": 30,
+       "roll": false
+      }
+     ]
+    }
+   ],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:DisableDamage": {
+   "id": "melvorAoD:DisableDamage",
+   "name": "Impenetrable Idol",
+   "duration_turns": 1,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:Malice": {
+   "id": "melvorAoD:Malice",
+   "name": "Malice",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:GrudgePlayer": {
+   "id": "melvorAoD:GrudgePlayer",
+   "name": "Grudge",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:GrudgeEnemy": {
+   "id": "melvorAoD:GrudgeEnemy",
+   "name": "Grudge",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:Consume": {
+   "id": "melvorAoD:Consume",
+   "name": "Consume",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:Spite": {
+   "id": "melvorAoD:Spite",
+   "name": "Spite",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Debuff"
+   ]
+  },
+  "melvorAoD:Martyr": {
+   "id": "melvorAoD:Martyr",
+   "name": "Martyr",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  },
+  "melvorAoD:Eradicate": {
+   "id": "melvorAoD:Eradicate",
+   "name": "Eradicate",
+   "duration_turns": null,
+   "damage_groups": [],
+   "attack_interval_modifier": null,
+   "effect_groups": [
+    "melvorD:Buff"
+   ]
+  }
+ }
+}
