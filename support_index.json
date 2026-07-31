@@ -1,0 +1,10123 @@
+{
+ "agility_obstacles": {
+  "count": 79,
+  "items": [
+   {
+    "id": "melvorF:CargoNet",
+    "name": "Cargo Net",
+    "namespace": "melvorF",
+    "slot_category": 0,
+    "base_interval_ms": 4000,
+    "base_xp": 8,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 10000,
+    "modifiers": {
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 3
+      }
+     ],
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Fishing",
+       "value": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:RopeSwing",
+    "name": "Rope Swing",
+    "namespace": "melvorF",
+    "slot_category": 0,
+    "base_interval_ms": 4000,
+    "base_xp": 6,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 10000,
+    "modifiers": {
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Agility",
+       "value": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:RopeClimb",
+    "name": "Rope Climb",
+    "namespace": "melvorF",
+    "slot_category": 0,
+    "base_interval_ms": 6000,
+    "base_xp": 7,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 10000,
+    "modifiers": {
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Thieving",
+       "value": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:RopeJump",
+    "name": "Rope Jump",
+    "namespace": "melvorF",
+    "slot_category": 1,
+    "base_interval_ms": 7000,
+    "base_xp": 13,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 50000,
+    "modifiers": {
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Smithing",
+       "value": 3
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:MonkeyBars",
+    "name": "Monkey Bars",
+    "namespace": "melvorF",
+    "slot_category": 1,
+    "base_interval_ms": 3000,
+    "base_xp": 7,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Firemaking",
+      "level": 15
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Oak_Logs",
+      "quantity": 250
+     }
+    ],
+    "gp_cost": 50000,
+    "modifiers": {
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Firemaking",
+       "value": -4
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:BalanceBeam",
+    "name": "Balance Beam",
+    "namespace": "melvorF",
+    "slot_category": 1,
+    "base_interval_ms": 4000,
+    "base_xp": 11,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 50000,
+    "modifiers": {
+     "skillXP": [
+      {
+       "skillID": "melvorD:Agility",
+       "value": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:BalanceSeesaw",
+    "name": "Balance Seesaw",
+    "namespace": "melvorF",
+    "slot_category": 2,
+    "base_interval_ms": 5000,
+    "base_xp": 24,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 150000,
+    "modifiers": {
+     "skillXP": [
+      {
+       "skillID": "melvorD:Agility",
+       "value": 2
+      }
+     ],
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Agility",
+       "value": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:PipeClimb",
+    "name": "Pipe Climb",
+    "namespace": "melvorF",
+    "slot_category": 2,
+    "base_interval_ms": 9000,
+    "base_xp": 29,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Strength",
+      "level": 10
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Defence",
+      "level": 10
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Iron_Bar",
+      "quantity": 300
+     }
+    ],
+    "gp_cost": 150000,
+    "modifiers": {
+     "meleeMaxHit": 5,
+     "meleeEvasion": 5
+    }
+   },
+   {
+    "id": "melvorF:PipeBalance",
+    "name": "Pipe Balance",
+    "namespace": "melvorF",
+    "slot_category": 2,
+    "base_interval_ms": 5000,
+    "base_xp": 24,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Mining",
+      "level": 20
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Iron_Ore",
+      "quantity": 300
+     },
+     {
+      "id": "melvorD:Tin_Ore",
+      "quantity": 300
+     }
+    ],
+    "gp_cost": 150000,
+    "modifiers": {
+     "flatMiningNodeHP": 10,
+     "skillPreservationChance": 3,
+     "noMiningNodeDamageChance": [
+      {
+       "categoryID": "melvorD:Essence",
+       "value": 3
+      },
+      {
+       "categoryID": "melvorD:Ore",
+       "value": 3
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:PitJump",
+    "name": "Pit Jump",
+    "namespace": "melvorF",
+    "slot_category": 2,
+    "base_interval_ms": 4000,
+    "base_xp": 37,
+    "skill_requirements": [],
+    "item_costs": [
+     {
+      "id": "melvorD:Raw_Herring",
+      "quantity": 300
+     },
+     {
+      "id": "melvorD:Raw_Salmon",
+      "quantity": 300
+     }
+    ],
+    "gp_cost": 150000,
+    "modifiers": {
+     "skillXP": [
+      {
+       "value": 3
+      },
+      {
+       "skillID": "melvorD:Agility",
+       "value": -4
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:SteppingStones",
+    "name": "Stepping Stones",
+    "namespace": "melvorF",
+    "slot_category": 2,
+    "base_interval_ms": 9000,
+    "base_xp": 13,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Woodcutting",
+      "level": 30
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Firemaking",
+      "level": 30
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Willow_Logs",
+      "quantity": 300
+     },
+     {
+      "id": "melvorD:Teak_Logs",
+      "quantity": 300
+     }
+    ],
+    "gp_cost": 150000,
+    "modifiers": {
+     "skillXP": [
+      {
+       "skillID": "melvorD:Firemaking",
+       "value": 3
+      }
+     ],
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Woodcutting",
+       "value": -6
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:CoalStones",
+    "name": "Coal Stones",
+    "namespace": "melvorF",
+    "slot_category": 3,
+    "base_interval_ms": 6000,
+    "base_xp": 22,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Thieving",
+      "level": 20
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Cooking",
+      "level": 20
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Tomato_Seed",
+      "quantity": 100
+     },
+     {
+      "id": "melvorD:Salmon",
+      "quantity": 500
+     }
+    ],
+    "gp_cost": 250000,
+    "modifiers": {
+     "skillPreservationChance": 3,
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:GP",
+       "skillID": "melvorD:Thieving",
+       "value": 20
+      }
+     ],
+     "foodHealingValue": 10,
+     "skillXP": -4
+    }
+   },
+   {
+    "id": "melvorF:MudCrawl",
+    "name": "Mud Crawl",
+    "namespace": "melvorF",
+    "slot_category": 3,
+    "base_interval_ms": 8000,
+    "base_xp": 34,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Herblore",
+      "level": 25
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Farming",
+      "level": 25
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Garum_Herb",
+      "quantity": 250
+     },
+     {
+      "id": "melvorD:Sourweed_Herb",
+      "quantity": 250
+     },
+     {
+      "id": "melvorD:Mantalyme_Herb",
+      "quantity": 250
+     }
+    ],
+    "gp_cost": 250000,
+    "modifiers": {
+     "skillPreservationChance": [
+      {
+       "skillID": "melvorD:Herblore",
+       "value": 3
+      }
+     ],
+     "skillXP": [
+      {
+       "skillID": "melvorD:Herblore",
+       "value": 2
+      }
+     ],
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Herblore",
+       "value": 2
+      }
+     ],
+     "basePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Farming",
+       "value": -10
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:MudDive",
+    "name": "Mud Dive",
+    "namespace": "melvorF",
+    "slot_category": 3,
+    "base_interval_ms": 8000,
+    "base_xp": 43,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Attack",
+      "level": 20
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Strength",
+      "level": 20
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Mithril_Bar",
+      "quantity": 500
+     }
+    ],
+    "gp_cost": 250000,
+    "modifiers": {
+     "meleeMaxHit": 2,
+     "meleeAccuracyRating": 5,
+     "flatMaxHitpoints": 2,
+     "flatResistance": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": -4
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:CaveClimb",
+    "name": "Cave Climb",
+    "namespace": "melvorF",
+    "slot_category": 3,
+    "base_interval_ms": 7000,
+    "base_xp": 36,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Strength",
+      "level": 10
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Ranged",
+      "level": 10
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Magic",
+      "level": 10
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Air_Rune",
+      "quantity": 500
+     },
+     {
+      "id": "melvorD:Earth_Rune",
+      "quantity": 500
+     },
+     {
+      "id": "melvorD:Iron_Bar",
+      "quantity": 250
+     }
+    ],
+    "gp_cost": 250000,
+    "modifiers": {
+     "ammoPreservationChance": 5,
+     "runePreservationChance": 5,
+     "meleeMaxHit": 5,
+     "flatMaxHitpoints": -4
+    }
+   },
+   {
+    "id": "melvorF:GapJump",
+    "name": "Gap Jump",
+    "namespace": "melvorF",
+    "slot_category": 3,
+    "base_interval_ms": 6000,
+    "base_xp": 48,
+    "skill_requirements": [],
+    "item_costs": [
+     {
+      "id": "melvorD:Mind_Rune",
+      "quantity": 500
+     }
+    ],
+    "gp_cost": 250000,
+    "modifiers": {
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Runecrafting",
+       "value": 3
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:RockClimb",
+    "name": "Rock Climb",
+    "namespace": "melvorF",
+    "slot_category": 4,
+    "base_interval_ms": 4000,
+    "base_xp": 35,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Woodcutting",
+      "level": 30
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Fishing",
+      "level": 30
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Mining",
+      "level": 30
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Thieving",
+      "level": 30
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Teak_Logs",
+      "quantity": 500
+     },
+     {
+      "id": "melvorD:Coal_Ore",
+      "quantity": 500
+     },
+     {
+      "id": "melvorD:Onion_Seed",
+      "quantity": 500
+     }
+    ],
+    "gp_cost": 500000,
+    "modifiers": {
+     "skillItemDoublingChance": [
+      {
+       "skillID": "melvorD:Fishing",
+       "value": 5
+      },
+      {
+       "skillID": "melvorD:Woodcutting",
+       "value": 5
+      },
+      {
+       "skillID": "melvorD:Mining",
+       "value": 5
+      },
+      {
+       "skillID": "melvorD:Thieving",
+       "value": 5
+      }
+     ],
+     "skillPreservationChance": -10
+    }
+   },
+   {
+    "id": "melvorF:CliffClimb",
+    "name": "Cliff Climb",
+    "namespace": "melvorF",
+    "slot_category": 4,
+    "base_interval_ms": 13000,
+    "base_xp": 64,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Slayer",
+      "level": 20
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Mithril_Bar",
+      "quantity": 1000
+     }
+    ],
+    "gp_cost": 500000,
+    "modifiers": {
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:SlayerCoins",
+       "value": 10
+      }
+     ],
+     "damageDealtToSlayerTasks": 5,
+     "slayerTaskLength": 10,
+     "skillXP": [
+      {
+       "skillID": "melvorD:Slayer",
+       "value": -10
+      }
+     ],
+     "flatSlayerAreaEffectNegation": -20
+    }
+   },
+   {
+    "id": "melvorF:CliffBalance",
+    "name": "Cliff Balance",
+    "namespace": "melvorF",
+    "slot_category": 4,
+    "base_interval_ms": 4000,
+    "base_xp": 41,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Attack",
+      "level": 20
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Ranged",
+      "level": 20
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Magic",
+      "level": 20
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Mithril_Ore",
+      "quantity": 500
+     },
+     {
+      "id": "melvorD:Coal_Ore",
+      "quantity": 500
+     },
+     {
+      "id": "melvorD:Rune_Essence",
+      "quantity": 1000
+     }
+    ],
+    "gp_cost": 500000,
+    "modifiers": {
+     "meleeAccuracyRating": 5,
+     "rangedAccuracyRating": 5,
+     "magicAccuracyRating": 5,
+     "flatMaxHitpoints": 2,
+     "flatPrayerPointCost": 2
+    }
+   },
+   {
+    "id": "melvorF:MountainClimb",
+    "name": "Mountain Climb",
+    "namespace": "melvorF",
+    "slot_category": 4,
+    "base_interval_ms": 10000,
+    "base_xp": 60,
+    "skill_requirements": [],
+    "item_costs": [
+     {
+      "id": "melvorD:Bones",
+      "quantity": 1000
+     }
+    ],
+    "gp_cost": 500000,
+    "modifiers": {
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:GP",
+       "skillID": "melvorD:Agility",
+       "value": 15
+      }
+     ],
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Agility",
+       "value": -12
+      }
+     ],
+     "skillXP": [
+      {
+       "skillID": "melvorD:Agility",
+       "value": -8
+      }
+     ],
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Agility",
+       "value": -2
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:TreeClimb",
+    "name": "Tree Climb",
+    "namespace": "melvorF",
+    "slot_category": 4,
+    "base_interval_ms": 5000,
+    "base_xp": 44,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Firemaking",
+      "level": 60
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Mahogany_Logs",
+      "quantity": 1000
+     },
+     {
+      "id": "melvorD:Iron_Arrows",
+      "quantity": 2000
+     },
+     {
+      "id": "melvorD:Chaos_Rune",
+      "quantity": 2000
+     }
+    ],
+    "gp_cost": 500000,
+    "modifiers": {
+     "skillXP": 4,
+     "masteryXP": 3,
+     "skillPreservationChance": -10,
+     "ammoPreservationChance": -10,
+     "runePreservationChance": -10
+    }
+   },
+   {
+    "id": "melvorF:TreeHop",
+    "name": "Tree Hop",
+    "namespace": "melvorF",
+    "slot_category": 5,
+    "base_interval_ms": 11000,
+    "base_xp": 68,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Woodcutting",
+      "level": 40
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Ranged",
+      "level": 40
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Magic",
+      "level": 40
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Steel_Arrows",
+      "quantity": 2500
+     },
+     {
+      "id": "melvorF:Nature_Rune",
+      "quantity": 2500
+     }
+    ],
+    "gp_cost": 1000000,
+    "modifiers": {
+     "skillPreservationChance": 5,
+     "ammoPreservationChance": 5,
+     "runePreservationChance": 5
+    }
+   },
+   {
+    "id": "melvorF:TreeBalance",
+    "name": "Tree Balance",
+    "namespace": "melvorF",
+    "slot_category": 5,
+    "base_interval_ms": 13000,
+    "base_xp": 59,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 1000000,
+    "modifiers": {
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Agility",
+       "value": -12
+      }
+     ],
+     "skillXP": -4
+    }
+   },
+   {
+    "id": "melvorF:RockyWaters",
+    "name": "Rocky Waters",
+    "namespace": "melvorF",
+    "slot_category": 5,
+    "base_interval_ms": 11000,
+    "base_xp": 61,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Hitpoints",
+      "level": 50
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Lobster",
+      "quantity": 3000
+     }
+    ],
+    "gp_cost": 1000000,
+    "modifiers": {
+     "flatMaxHitpoints": 5
+    }
+   },
+   {
+    "id": "melvorF:LakeSwim",
+    "name": "Lake Swim",
+    "namespace": "melvorF",
+    "slot_category": 5,
+    "base_interval_ms": 14000,
+    "base_xp": 55,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Strength",
+      "level": 50
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Prayer",
+      "level": 50
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Silver_Bar",
+      "quantity": 2500
+     }
+    ],
+    "gp_cost": 1000000,
+    "modifiers": {
+     "damageDealtToAllMonsters": 5,
+     "flatResistance": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": 1
+      }
+     ],
+     "prayerPointPreservationChance": 3
+    }
+   },
+   {
+    "id": "melvorF:RaftDrifting",
+    "name": "Raft Drifting",
+    "namespace": "melvorF",
+    "slot_category": 5,
+    "base_interval_ms": 7000,
+    "base_xp": 80,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Farming",
+      "level": 60
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Watermelon",
+      "quantity": 3000
+     }
+    ],
+    "gp_cost": 1000000,
+    "modifiers": {
+     "basePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Farming",
+       "value": 10
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:SpikeTrap",
+    "name": "Spike Trap",
+    "namespace": "melvorF",
+    "slot_category": 6,
+    "base_interval_ms": 9000,
+    "base_xp": 87,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 2500000,
+    "modifiers": {
+     "flatMaxHitpoints": -4,
+     "flatResistance": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": -2
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:HeatTrap",
+    "name": "Heat Trap",
+    "namespace": "melvorF",
+    "slot_category": 6,
+    "base_interval_ms": 5000,
+    "base_xp": 134,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 2500000,
+    "modifiers": {
+     "damageDealtToAllMonsters": -10,
+     "autoEatEfficiency": -10
+    }
+   },
+   {
+    "id": "melvorF:BoulderTrap",
+    "name": "Boulder Trap",
+    "namespace": "melvorF",
+    "slot_category": 6,
+    "base_interval_ms": 13000,
+    "base_xp": 93,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 2500000,
+    "modifiers": {
+     "skillPreservationChance": -20
+    }
+   },
+   {
+    "id": "melvorF:WaterTrap",
+    "name": "Water Trap",
+    "namespace": "melvorF",
+    "slot_category": 6,
+    "base_interval_ms": 8000,
+    "base_xp": 53,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 2500000,
+    "modifiers": {
+     "skillXP": -6,
+     "masteryXP": -6
+    }
+   },
+   {
+    "id": "melvorF:FreezingTrap",
+    "name": "Freezing Trap",
+    "namespace": "melvorF",
+    "slot_category": 6,
+    "base_interval_ms": 8000,
+    "base_xp": 78,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 2500000,
+    "modifiers": {
+     "runePreservationChance": -30,
+     "ammoPreservationChance": -30,
+     "meleeAccuracyRating": -16,
+     "rangedAccuracyRating": -16,
+     "magicAccuracyRating": -16
+    }
+   },
+   {
+    "id": "melvorF:PipeCrawl",
+    "name": "Pipe Crawl",
+    "namespace": "melvorF",
+    "slot_category": 7,
+    "base_interval_ms": 11000,
+    "base_xp": 180,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Slayer",
+      "level": 70
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Adamantite_Bar",
+      "quantity": 4000
+     }
+    ],
+    "gp_cost": 5000000,
+    "modifiers": {
+     "damageDealtToMonstersInArea": [
+      {
+       "categoryID": "melvorF:SlayerAreas",
+       "value": 8
+      }
+     ],
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:SlayerCoins",
+       "value": -10
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:RaftBuilding",
+    "name": "Raft Building",
+    "namespace": "melvorF",
+    "slot_category": 7,
+    "base_interval_ms": 14000,
+    "base_xp": 144,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Strength",
+      "level": 70
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Hitpoints",
+      "level": 70
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Swordfish",
+      "quantity": 2000
+     }
+    ],
+    "gp_cost": 5000000,
+    "modifiers": {
+     "damageDealtToAllMonsters": 2,
+     "flatMaxHitpoints": 2,
+     "flatResistance": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": 1
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:SpikeJump",
+    "name": "Spike Jump",
+    "namespace": "melvorF",
+    "slot_category": 7,
+    "base_interval_ms": 8000,
+    "base_xp": 145,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Defence",
+      "level": 70
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Prayer",
+      "level": 70
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Emerald",
+      "quantity": 2000
+     }
+    ],
+    "gp_cost": 5000000,
+    "modifiers": {
+     "damageDealtToMonstersInArea": [
+      {
+       "categoryID": "melvorD:Dungeons",
+       "value": 5
+      }
+     ],
+     "combatLootDoublingChance": 5
+    }
+   },
+   {
+    "id": "melvorF:TreeHang",
+    "name": "Tree Hang",
+    "namespace": "melvorF",
+    "slot_category": 7,
+    "base_interval_ms": 8000,
+    "base_xp": 205,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Woodcutting",
+      "level": 80
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Firemaking",
+      "level": 80
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorF:Barrentoe_Herb",
+      "quantity": 5000
+     }
+    ],
+    "gp_cost": 5000000,
+    "modifiers": {
+     "masteryXP": 5,
+     "skillXP": -6
+    }
+   },
+   {
+    "id": "melvorF:ALovelyJog",
+    "name": "A Lovely Jog",
+    "namespace": "melvorF",
+    "slot_category": 7,
+    "base_interval_ms": 12000,
+    "base_xp": 106,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Firemaking",
+      "level": 70
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Fishing",
+      "level": 70
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Mining",
+      "level": 70
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Magic_Logs",
+      "quantity": 5000
+     }
+    ],
+    "gp_cost": 5000000,
+    "modifiers": {
+     "skillXP": 5,
+     "masteryXP": -6
+    }
+   },
+   {
+    "id": "melvorF:LavaJump",
+    "name": "Lava Jump",
+    "namespace": "melvorF",
+    "slot_category": 8,
+    "base_interval_ms": 5000,
+    "base_xp": 160,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Prayer",
+      "level": 80
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Shark",
+      "quantity": 2500
+     },
+     {
+      "id": "melvorD:Silver_Bar",
+      "quantity": 5000
+     },
+     {
+      "id": "melvorD:Redwood_Logs",
+      "quantity": 5000
+     }
+    ],
+    "gp_cost": 10000000,
+    "modifiers": {
+     "flatMonsterRespawnInterval": -300,
+     "flatResistance": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": -6
+      }
+     ],
+     "masteryXP": -6,
+     "autoEatEfficiency": -6
+    }
+   },
+   {
+    "id": "melvorF:WaterJump",
+    "name": "Water Jump",
+    "namespace": "melvorF",
+    "slot_category": 8,
+    "base_interval_ms": 5000,
+    "base_xp": 162,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Strength",
+      "level": 70
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Magic",
+      "level": 70
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Ranged",
+      "level": 70
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Rune_Arrows",
+      "quantity": 5000
+     },
+     {
+      "id": "melvorD:Death_Rune",
+      "quantity": 5000
+     },
+     {
+      "id": "melvorD:Gold_Bar",
+      "quantity": 5000
+     }
+    ],
+    "gp_cost": 10000000,
+    "modifiers": {
+     "masteryXP": 3,
+     "meleeMaxHit": 8,
+     "rangedMaxHit": 8,
+     "magicMaxHit": 8
+    }
+   },
+   {
+    "id": "melvorF:IceJump",
+    "name": "Ice Jump",
+    "namespace": "melvorF",
+    "slot_category": 8,
+    "base_interval_ms": 6000,
+    "base_xp": 315,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Cooking",
+      "level": 60
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Mining",
+      "level": 60
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Slayer",
+      "level": 60
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Thieving",
+      "level": 60
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Crab",
+      "quantity": 2500
+     },
+     {
+      "id": "melvorD:Coal_Ore",
+      "quantity": 5000
+     },
+     {
+      "id": "melvorD:Diamond",
+      "quantity": 2000
+     }
+    ],
+    "gp_cost": 10000000,
+    "modifiers": {
+     "skillPreservationChance": 10,
+     "foodHealingValue": 5,
+     "globalItemDoublingChance": 5,
+     "flatMaxHitpoints": 2,
+     "flatMiningNodeHP": 10
+    }
+   },
+   {
+    "id": "melvorF:CaveMaze",
+    "name": "Cave Maze",
+    "namespace": "melvorF",
+    "slot_category": 8,
+    "base_interval_ms": 8000,
+    "base_xp": 296,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Prayer",
+      "level": 70
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Ranged",
+      "level": 70
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Magic",
+      "level": 70
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Dragon_Bones",
+      "quantity": 5000
+     }
+    ],
+    "gp_cost": 10000000,
+    "modifiers": {
+     "prayerPointPreservationChance": 10,
+     "ammoPreservationChance": 10,
+     "runePreservationChance": 10,
+     "flatPrayerPointCost": -1
+    }
+   },
+   {
+    "id": "melvorF:FrozenLakeCrossing",
+    "name": "Frozen Lake Crossing",
+    "namespace": "melvorF",
+    "slot_category": 8,
+    "base_interval_ms": 15000,
+    "base_xp": 138,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Strength",
+      "level": 70
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Hitpoints",
+      "level": 70
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Adamantite_Bar",
+      "quantity": 7500
+     }
+    ],
+    "gp_cost": 10000000,
+    "modifiers": {
+     "damageDealtToAllMonsters": 3,
+     "autoEatEfficiency": 10,
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:SlayerCoins",
+       "value": 10
+      }
+     ],
+     "skillXP": [
+      {
+       "skillID": "melvorD:Slayer",
+       "value": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:Waterfall",
+    "name": "Waterfall",
+    "namespace": "melvorF",
+    "slot_category": 9,
+    "base_interval_ms": 23000,
+    "base_xp": 567,
+    "skill_requirements": [],
+    "item_costs": [
+     {
+      "id": "melvorF:Stardust",
+      "quantity": 3000
+     }
+    ],
+    "gp_cost": 20000000,
+    "modifiers": {
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Astrology",
+       "value": -5
+      }
+     ],
+     "skillXP": [
+      {
+       "skillID": "melvorD:Astrology",
+       "value": 5
+      }
+     ],
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Astrology",
+       "value": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:LavaWaterfallDodge",
+    "name": "Lava Waterfall Dodge",
+    "namespace": "melvorF",
+    "slot_category": 9,
+    "base_interval_ms": 15000,
+    "base_xp": 361,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Firemaking",
+      "level": 95
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Ranged",
+      "level": 95
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Magic",
+      "level": 95
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Slayer",
+      "level": 90
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Prayer",
+      "level": 80
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Magic_Bones",
+      "quantity": 10000
+     },
+     {
+      "id": "melvorD:Dragon_Arrows",
+      "quantity": 10000
+     },
+     {
+      "id": "melvorD:Ancient_Rune",
+      "quantity": 10000
+     }
+    ],
+    "gp_cost": 20000000,
+    "modifiers": {
+     "skillPreservationChance": 10,
+     "ammoPreservationChance": 5,
+     "runePreservationChance": 10,
+     "prayerPointPreservationChance": 10
+    }
+   },
+   {
+    "id": "melvorF:BoulderMove",
+    "name": "Boulder Move",
+    "namespace": "melvorF",
+    "slot_category": 9,
+    "base_interval_ms": 14000,
+    "base_xp": 560,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Firemaking",
+      "level": 99
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Woodcutting",
+      "level": 99
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Dragonite_Bar",
+      "quantity": 10000
+     },
+     {
+      "id": "melvorD:Redwood_Logs",
+      "quantity": 10000
+     }
+    ],
+    "gp_cost": 20000000,
+    "modifiers": {
+     "masteryXP": 8
+    }
+   },
+   {
+    "id": "melvorF:DragonFight",
+    "name": "Dragon Fight",
+    "namespace": "melvorF",
+    "slot_category": 9,
+    "base_interval_ms": 20000,
+    "base_xp": 539,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Attack",
+      "level": 95
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Strength",
+      "level": 95
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Defence",
+      "level": 95
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Prayer",
+      "level": 95
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Whale",
+      "quantity": 3000
+     }
+    ],
+    "gp_cost": 20000000,
+    "modifiers": {
+     "flatMonsterRespawnInterval": -300,
+     "autoEatEfficiency": -16
+    }
+   },
+   {
+    "id": "melvorF:OceanRafting",
+    "name": "Ocean Rafting",
+    "namespace": "melvorF",
+    "slot_category": 9,
+    "base_interval_ms": 23000,
+    "base_xp": 343,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Hitpoints",
+      "level": 99
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Carrot",
+      "quantity": 30000
+     }
+    ],
+    "gp_cost": 20000000,
+    "modifiers": {
+     "damageDealtToAllMonsters": 5,
+     "autoEatEfficiency": 5,
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:SlayerCoins",
+       "value": 10
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:ForestTrail",
+    "name": "Forest Trail",
+    "namespace": "melvorF",
+    "slot_category": 5,
+    "base_interval_ms": 10000,
+    "base_xp": 88,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Summoning",
+      "level": 45
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Maple_Logs",
+      "quantity": 1500
+     }
+    ],
+    "gp_cost": 1000000,
+    "modifiers": {
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Summoning",
+       "value": 5
+      }
+     ],
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Summoning",
+       "value": -5
+      }
+     ],
+     "basePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Farming",
+       "value": -6
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:RunicTrail",
+    "name": "Runic Trail",
+    "namespace": "melvorF",
+    "slot_category": 7,
+    "base_interval_ms": 12000,
+    "base_xp": 160,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Hitpoints",
+      "level": 70
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Herblore",
+      "level": 70
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Summoning",
+      "level": 75
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorF:Summoning_Shard_Gold",
+      "quantity": 500
+     },
+     {
+      "id": "melvorF:Summoning_Shard_Black",
+      "quantity": 500
+     }
+    ],
+    "gp_cost": 5000000,
+    "modifiers": {
+     "skillPreservationChance": [
+      {
+       "skillID": "melvorD:Summoning",
+       "value": 5
+      },
+      {
+       "skillID": "melvorD:Herblore",
+       "value": -16
+      }
+     ],
+     "summoningChargePreservationChance": 15,
+     "flatBasePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Summoning",
+       "value": 3
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:BurningCoals",
+    "name": "Burning Coals",
+    "namespace": "melvorF",
+    "slot_category": 2,
+    "base_interval_ms": 6000,
+    "base_xp": 19,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Firemaking",
+      "level": 25
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Coal_Ore",
+      "quantity": 350
+     },
+     {
+      "id": "melvorD:Oak_Logs",
+      "quantity": 200
+     }
+    ],
+    "gp_cost": 150000,
+    "modifiers": {
+     "skillXP": [
+      {
+       "skillID": "melvorD:Cooking",
+       "value": 3
+      }
+     ],
+     "successfulCookChance": 5,
+     "damageDealtToAllMonsters": -6,
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Cooking",
+       "value": -3
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorF:SwelteringPools",
+    "name": "Sweltering Pools",
+    "namespace": "melvorF",
+    "slot_category": 7,
+    "base_interval_ms": 12000,
+    "base_xp": 195,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Firemaking",
+      "level": 75
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Smithing",
+      "level": 75
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Cooking",
+      "level": 75
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Yew_Logs",
+      "quantity": 1000
+     },
+     {
+      "id": "melvorD:Adamantite_Bar",
+      "quantity": 500
+     },
+     {
+      "id": "melvorD:Coal_Ore",
+      "quantity": 1000
+     }
+    ],
+    "gp_cost": 5000000,
+    "modifiers": {
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Cooking",
+       "value": 3
+      }
+     ],
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Cooking",
+       "value": -3
+      }
+     ],
+     "foodHealingValue": 10,
+     "autoEatEfficiency": 10,
+     "skillPreservationChance": -20
+    }
+   },
+   {
+    "id": "melvorF:RooftopRun",
+    "name": "Rooftop Run",
+    "namespace": "melvorF",
+    "slot_category": 4,
+    "base_interval_ms": 6000,
+    "base_xp": 27,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Thieving",
+      "level": 50
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Lemontyle_Herb",
+      "quantity": 500
+     },
+     {
+      "id": "melvorD:Lobster",
+      "quantity": 750
+     }
+    ],
+    "gp_cost": 500000,
+    "modifiers": {
+     "skillXP": [
+      {
+       "skillID": "melvorD:Thieving",
+       "value": 3
+      }
+     ],
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:GP",
+       "skillID": "melvorD:Thieving",
+       "value": 20
+      }
+     ],
+     "flatSkillInterval": [
+      {
+       "skillID": "melvorD:Thieving",
+       "value": -200
+      }
+     ],
+     "thievingStealth": 35,
+     "damageDealtToAllMonsters": -10
+    }
+   },
+   {
+    "id": "melvorTotH:PitMaze",
+    "name": "Pit Maze",
+    "namespace": "melvorTotH",
+    "slot_category": 10,
+    "base_interval_ms": 31000,
+    "base_xp": 835,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Mining",
+      "level": 100
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Corundumite_Ore",
+      "quantity": 12500
+     }
+    ],
+    "gp_cost": 30000000,
+    "modifiers": {
+     "masteryXP": [
+      {
+       "realmID": "melvorD:Melvor",
+       "value": 3
+      }
+     ],
+     "flatMiningNodeHP": 15,
+     "qualitySuperiorGemChance": 2,
+     "skillPreservationChance": -20
+    }
+   },
+   {
+    "id": "melvorTotH:FrozenMaze",
+    "name": "Frozen Maze",
+    "namespace": "melvorTotH",
+    "slot_category": 10,
+    "base_interval_ms": 27000,
+    "base_xp": 810,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Prayer",
+      "level": 100
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorF:Holy_Dust",
+      "quantity": 12500
+     },
+     {
+      "id": "melvorTotH:Corundum_Arrows",
+      "quantity": 7500
+     }
+    ],
+    "gp_cost": 30000000,
+    "modifiers": {
+     "flatMonsterRespawnInterval": -100,
+     "flatResistance": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": 1
+      }
+     ],
+     "flatPrayerPointCost": -3,
+     "runePreservationChance": -20,
+     "ammoPreservationChance": -20
+    }
+   },
+   {
+    "id": "melvorTotH:WaterMaze",
+    "name": "Water Maze",
+    "namespace": "melvorTotH",
+    "slot_category": 10,
+    "base_interval_ms": 22000,
+    "base_xp": 870,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Hitpoints",
+      "level": 100
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Herblore",
+      "level": 100
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Woodcutting",
+      "level": 100
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Spruce_Logs",
+      "quantity": 12500
+     },
+     {
+      "id": "melvorTotH:Snowcress_Herb",
+      "quantity": 6000
+     }
+    ],
+    "gp_cost": 30000000,
+    "modifiers": {
+     "globalItemDoublingChance": 10,
+     "skillXP": -10
+    }
+   },
+   {
+    "id": "melvorTotH:ForestMaze",
+    "name": "Forest Maze",
+    "namespace": "melvorTotH",
+    "slot_category": 10,
+    "base_interval_ms": 19000,
+    "base_xp": 813,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Slayer",
+      "level": 100
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Cooking",
+      "level": 100
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Smithing",
+      "level": 100
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Lava_Fish",
+      "quantity": 8000
+     },
+     {
+      "id": "melvorTotH:Corundumite_Bar",
+      "quantity": 6000
+     }
+    ],
+    "gp_cost": 30000000,
+    "modifiers": {
+     "skillXP": [
+      {
+       "skillID": "melvorD:Slayer",
+       "value": 8
+      }
+     ],
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:SlayerCoins",
+       "value": 10
+      }
+     ],
+     "flatSlayerAreaEffectNegation": 15,
+     "autoEatEfficiency": -20,
+     "accuracyRating": -20
+    }
+   },
+   {
+    "id": "melvorTotH:PipeMaze",
+    "name": "Pipe Maze",
+    "namespace": "melvorTotH",
+    "slot_category": 10,
+    "base_interval_ms": 24000,
+    "base_xp": 683,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Attack",
+      "level": 100
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Defence",
+      "level": 100
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Prayer",
+      "level": 100
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Onyx",
+      "quantity": 8000
+     }
+    ],
+    "gp_cost": 30000000,
+    "modifiers": {
+     "damageDealtToMonstersInArea": [
+      {
+       "categoryID": "melvorD:Dungeons",
+       "value": 5
+      }
+     ],
+     "combatLootDoublingChance": -20
+    }
+   },
+   {
+    "id": "melvorTotH:BoulderBalance",
+    "name": "Boulder Balance",
+    "namespace": "melvorTotH",
+    "slot_category": 11,
+    "base_interval_ms": 20000,
+    "base_xp": 682,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Ranged",
+      "level": 105
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Attack",
+      "level": 105
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Magic",
+      "level": 105
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Poison_Rune",
+      "quantity": 20000
+     },
+     {
+      "id": "melvorTotH:Revenant_Shortbow",
+      "quantity": 10000
+     },
+     {
+      "id": "melvorTotH:Corundum_Sword",
+      "quantity": 10000
+     }
+    ],
+    "gp_cost": 50000000,
+    "modifiers": {
+     "minHitBasedOnMaxHit": 5,
+     "flatAttackInterval": -100,
+     "accuracyRating": -20
+    }
+   },
+   {
+    "id": "melvorTotH:CaveWaters",
+    "name": "Cave Waters",
+    "namespace": "melvorTotH",
+    "slot_category": 11,
+    "base_interval_ms": 34000,
+    "base_xp": 1088,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Herblore",
+      "level": 105
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Crafting",
+      "level": 105
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Fishing",
+      "level": 105
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Bitterlyme_Herb",
+      "quantity": 12500
+     },
+     {
+      "id": "melvorF:Alchemists_Bag",
+      "quantity": 12500
+     },
+     {
+      "id": "melvorTotH:Raw_Rockfish",
+      "quantity": 10000
+     }
+    ],
+    "gp_cost": 50000000,
+    "modifiers": {
+     "potionChargePreservationChance": 15,
+     "skillPreservationChance": [
+      {
+       "skillID": "melvorD:Herblore",
+       "value": -10
+      }
+     ],
+     "masteryXP": [
+      {
+       "realmID": "melvorD:Melvor",
+       "value": -6
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorTotH:RuneCrawl",
+    "name": "Rune Crawl",
+    "namespace": "melvorTotH",
+    "slot_category": 11,
+    "base_interval_ms": 25000,
+    "base_xp": 977,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Summoning",
+      "level": 105
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Hornbeam_Logs",
+      "quantity": 15000
+     },
+     {
+      "id": "melvorF:Summoning_Shard_Gold",
+      "quantity": 5000
+     },
+     {
+      "id": "melvorF:Summoning_Shard_Black",
+      "quantity": 5000
+     }
+    ],
+    "gp_cost": 50000000,
+    "modifiers": {
+     "flatBasePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Summoning",
+       "value": 6
+      }
+     ],
+     "summoningChargePreservationChance": 10,
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Summoning",
+       "value": -5
+      }
+     ],
+     "potionChargePreservationChance": -20
+    }
+   },
+   {
+    "id": "melvorTotH:MonkeyTrail",
+    "name": "Monkey Trail",
+    "namespace": "melvorTotH",
+    "slot_category": 11,
+    "base_interval_ms": 23000,
+    "base_xp": 712,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Firemaking",
+      "level": 105
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Cooking",
+      "level": 105
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Farming",
+      "level": 105
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Coal_Ore",
+      "quantity": 7500
+     },
+     {
+      "id": "melvorTotH:Magma_Fish",
+      "quantity": 5000
+     },
+     {
+      "id": "melvorTotH:Chilli",
+      "quantity": 7500
+     }
+    ],
+    "gp_cost": 50000000,
+    "modifiers": {
+     "basePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Farming",
+       "realmID": "melvorD:Melvor",
+       "value": 15
+      }
+     ],
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Cooking",
+       "value": -5
+      }
+     ],
+     "foodHealingValue": 10,
+     "skillPreservationChance": -10,
+     "skillXP": [
+      {
+       "skillID": "melvorD:Agility",
+       "value": -6
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorTotH:ForestJog",
+    "name": "Forest Jog",
+    "namespace": "melvorTotH",
+    "slot_category": 11,
+    "base_interval_ms": 24000,
+    "base_xp": 1100,
+    "skill_requirements": [],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Oricha",
+      "quantity": 5000
+     }
+    ],
+    "gp_cost": 50000000,
+    "modifiers": {
+     "agilityObstacleCost": [
+      {
+       "realmID": "melvorD:Melvor",
+       "value": -5
+      }
+     ],
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:GP",
+       "skillID": "melvorD:Agility",
+       "value": 25
+      }
+     ],
+     "masteryXP": [
+      {
+       "realmID": "melvorD:Melvor",
+       "value": -6
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorTotH:RopeTrap",
+    "name": "Rope Trap",
+    "namespace": "melvorTotH",
+    "slot_category": 12,
+    "base_interval_ms": 38000,
+    "base_xp": 933,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 75000000,
+    "modifiers": {
+     "damageDealtToBosses": 8,
+     "masteryXP": [
+      {
+       "realmID": "melvorD:Melvor",
+       "value": -10
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorTotH:IceTrap",
+    "name": "Ice Trap",
+    "namespace": "melvorTotH",
+    "slot_category": 12,
+    "base_interval_ms": 38000,
+    "base_xp": 1366,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 75000000,
+    "modifiers": {
+     "masteryXP": [
+      {
+       "realmID": "melvorD:Melvor",
+       "value": 6
+      }
+     ],
+     "damageDealtToAllMonsters": -10,
+     "autoEatEfficiency": -20
+    }
+   },
+   {
+    "id": "melvorTotH:BurningTrap",
+    "name": "Burning Trap",
+    "namespace": "melvorTotH",
+    "slot_category": 12,
+    "base_interval_ms": 27000,
+    "base_xp": 1013,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 75000000,
+    "modifiers": {
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 15
+      }
+     ],
+     "globalItemDoublingChance": -30,
+     "combatLootDoublingChance": -30
+    }
+   },
+   {
+    "id": "melvorTotH:CaveTrap",
+    "name": "Cave Trap",
+    "namespace": "melvorTotH",
+    "slot_category": 12,
+    "base_interval_ms": 42000,
+    "base_xp": 1674,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 75000000,
+    "modifiers": {
+     "potionChargePreservationChance": 5,
+     "summoningChargePreservationChance": 5,
+     "flatMaxHitpoints": -5,
+     "skillPreservationChance": -10
+    }
+   },
+   {
+    "id": "melvorTotH:BalanceTrap",
+    "name": "Balance Trap",
+    "namespace": "melvorTotH",
+    "slot_category": 12,
+    "base_interval_ms": 34000,
+    "base_xp": 1214,
+    "skill_requirements": [],
+    "item_costs": [],
+    "gp_cost": 75000000,
+    "modifiers": {
+     "globalItemDoublingChance": 5,
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Agility",
+       "value": 10
+      }
+     ],
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:GP",
+       "skillID": "melvorD:Agility",
+       "value": -30
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorTotH:RooftopClimb",
+    "name": "Rooftop Climb",
+    "namespace": "melvorTotH",
+    "slot_category": 13,
+    "base_interval_ms": 39000,
+    "base_xp": 1610,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Thieving",
+      "level": 110
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Fishing",
+      "level": 110
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Moonwort_Herb",
+      "quantity": 15000
+     },
+     {
+      "id": "melvorTotH:Raw_Ghost_Fish",
+      "quantity": 15000
+     }
+    ],
+    "gp_cost": 150000000,
+    "modifiers": {
+     "thievingStealth": 75,
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:GP",
+       "skillID": "melvorD:Thieving",
+       "value": 50
+      }
+     ],
+     "thievingStunInterval": -25,
+     "globalItemDoublingChance": -30,
+     "combatLootDoublingChance": -30
+    }
+   },
+   {
+    "id": "melvorTotH:ForestClimb",
+    "name": "Forest Climb",
+    "namespace": "melvorTotH",
+    "slot_category": 13,
+    "base_interval_ms": 28000,
+    "base_xp": 1477,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Astrology",
+      "level": 110
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Mining",
+      "level": 115
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Meteorite_Ore",
+      "quantity": 5000
+     },
+     {
+      "id": "melvorF:Golden_Stardust",
+      "quantity": 1000
+     }
+    ],
+    "gp_cost": 150000000,
+    "modifiers": {
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Astrology",
+       "value": -10
+      }
+     ],
+     "randomProductChance": [
+      {
+       "skillID": "melvorD:Astrology",
+       "itemID": "melvorF:Stardust",
+       "value": 1.5
+      },
+      {
+       "skillID": "melvorD:Astrology",
+       "itemID": "melvorF:Golden_Stardust",
+       "value": 0.5
+      }
+     ],
+     "skillXP": -6
+    }
+   },
+   {
+    "id": "melvorTotH:FreezingClimb",
+    "name": "Freezing Climb",
+    "namespace": "melvorTotH",
+    "slot_category": 13,
+    "base_interval_ms": 35000,
+    "base_xp": 1505,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Defence",
+      "level": 110
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Ranged",
+      "level": 110
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Magic",
+      "level": 110
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Cerulean",
+      "quantity": 5000
+     },
+     {
+      "id": "melvorTotH:Palladium_Bar",
+      "quantity": 15000
+     },
+     {
+      "id": "melvorTotH:Pure_Essence",
+      "quantity": 20000
+     }
+    ],
+    "gp_cost": 150000000,
+    "modifiers": {
+     "evasion": 30,
+     "accuracyRating": 30,
+     "damageDealtToMonstersInArea": [
+      {
+       "categoryID": "melvorD:Dungeons",
+       "value": 15
+      }
+     ],
+     "currencyGainFromCombat": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": -150
+      }
+     ],
+     "combatLootDoublingChance": -6
+    }
+   },
+   {
+    "id": "melvorTotH:GapClimb",
+    "name": "Gap Climb",
+    "namespace": "melvorTotH",
+    "slot_category": 13,
+    "base_interval_ms": 36000,
+    "base_xp": 1499,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Slayer",
+      "level": 110
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Augite_Ore",
+      "quantity": 15000
+     }
+    ],
+    "gp_cost": 150000000,
+    "modifiers": {
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:SlayerCoins",
+       "value": 10
+      }
+     ],
+     "flatSlayerAreaEffectNegation": 15,
+     "damageDealtToMonstersInArea": [
+      {
+       "categoryID": "melvorF:SlayerAreas",
+       "value": 15
+      },
+      {
+       "categoryID": "melvorD:Dungeons",
+       "value": -20
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorTotH:WaterfallClimb",
+    "name": "Waterfall Climb",
+    "namespace": "melvorTotH",
+    "slot_category": 13,
+    "base_interval_ms": 32000,
+    "base_xp": 1326,
+    "skill_requirements": [],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Red_Oak_Logs",
+      "quantity": 15000
+     }
+    ],
+    "gp_cost": 150000000,
+    "modifiers": {
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Agility",
+       "realmID": "melvorD:Melvor",
+       "value": 10
+      }
+     ],
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:GP",
+       "skillID": "melvorD:Agility",
+       "value": 40
+      }
+     ],
+     "skillXP": [
+      {
+       "skillID": "melvorD:Agility",
+       "value": -16
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorTotH:FreezingRafting",
+    "name": "Freezing Rafting",
+    "namespace": "melvorTotH",
+    "slot_category": 14,
+    "base_interval_ms": 48000,
+    "base_xp": 2154,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Hitpoints",
+      "level": 110
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Cooking",
+      "level": 120
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Firemaking",
+      "level": 120
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Mystic_Logs",
+      "quantity": 20000
+     },
+     {
+      "id": "melvorTotH:Raw_Mystic_Seahorse",
+      "quantity": 10000
+     }
+    ],
+    "gp_cost": 200000000,
+    "modifiers": {
+     "autoEatThreshold": 3,
+     "autoEatEfficiency": 15,
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Cooking",
+       "value": -10
+      }
+     ],
+     "basePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Farming",
+       "value": -20
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorTotH:WaterDive",
+    "name": "Water Dive",
+    "namespace": "melvorTotH",
+    "slot_category": 14,
+    "base_interval_ms": 44000,
+    "base_xp": 1944,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Woodcutting",
+      "level": 120
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Fishing",
+      "level": 120
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Mining",
+      "level": 120
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Carrion_Logs",
+      "quantity": 20000
+     },
+     {
+      "id": "melvorTotH:Terrorfish",
+      "quantity": 20000
+     },
+     {
+      "id": "melvorTotH:Divinite_Ore",
+      "quantity": 20000
+     }
+    ],
+    "gp_cost": 200000000,
+    "modifiers": {
+     "masteryXP": [
+      {
+       "realmID": "melvorD:Melvor",
+       "value": 8
+      }
+     ],
+     "skillXP": -8
+    }
+   },
+   {
+    "id": "melvorTotH:WaterfallCrossing",
+    "name": "Waterfall Crossing",
+    "namespace": "melvorTotH",
+    "slot_category": 14,
+    "base_interval_ms": 41000,
+    "base_xp": 1841,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Herblore",
+      "level": 120
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorF:Diamond_Luck_Potion_IV",
+      "quantity": 10000
+     },
+     {
+      "id": "melvorTotH:Wurmtayle_Herb",
+      "quantity": 15000
+     }
+    ],
+    "gp_cost": 200000000,
+    "modifiers": {
+     "attackRolls": 1,
+     "flatMaxHitpoints": -10,
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:SlayerCoins",
+       "value": -10
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorTotH:MountainTrail",
+    "name": "Mountain Trail",
+    "namespace": "melvorTotH",
+    "slot_category": 14,
+    "base_interval_ms": 27000,
+    "base_xp": 1534,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Smithing",
+      "level": 115
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Fletching",
+      "level": 115
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Crafting",
+      "level": 115
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Meteorite_Bar",
+      "quantity": 10000
+     },
+     {
+      "id": "melvorTotH:Meteorite_Javelin",
+      "quantity": 15000
+     },
+     {
+      "id": "melvorTotH:Revenant_Logs",
+      "quantity": 25000
+     }
+    ],
+    "gp_cost": 200000000,
+    "modifiers": {
+     "flatSkillInterval": [
+      {
+       "skillID": "melvorD:Smithing",
+       "value": -200
+      },
+      {
+       "skillID": "melvorD:Fletching",
+       "value": -200
+      },
+      {
+       "skillID": "melvorD:Crafting",
+       "value": -200
+      }
+     ],
+     "additionalPrimaryProductChance": [
+      {
+       "skillID": "melvorD:Smithing",
+       "value": 30
+      },
+      {
+       "skillID": "melvorD:Fletching",
+       "value": 30
+      },
+      {
+       "skillID": "melvorD:Crafting",
+       "value": 30
+      }
+     ],
+     "qualitySuperiorGemChance": 3,
+     "skillPreservationChance": -20
+    }
+   },
+   {
+    "id": "melvorTotH:LavaTrail",
+    "name": "Lava Trail",
+    "namespace": "melvorTotH",
+    "slot_category": 14,
+    "base_interval_ms": 36000,
+    "base_xp": 1683,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Farming",
+      "level": 120
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorD:Astrology",
+      "level": 120
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorTotH:Starfruit",
+      "quantity": 30000
+     },
+     {
+      "id": "melvorF:Golden_Stardust",
+      "quantity": 1000
+     }
+    ],
+    "gp_cost": 200000000,
+    "modifiers": {
+     "skillPreservationChance": [
+      {
+       "realmID": "melvorD:Melvor",
+       "value": 15
+      }
+     ],
+     "masteryXP": [
+      {
+       "realmID": "melvorD:Melvor",
+       "value": -8
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorAoD:RiverCrossing",
+    "name": "River Crossing",
+    "namespace": "melvorAoD",
+    "slot_category": 1,
+    "base_interval_ms": 5000,
+    "base_xp": 12,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorAoD:Cartography",
+      "level": 15
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorAoD:Paper",
+      "quantity": 200
+     }
+    ],
+    "gp_cost": 50000,
+    "modifiers": {
+     "cartographySurveyInterval": -5,
+     "mapRefinementCost": -5,
+     "skillXP": [
+      {
+       "skillID": "melvorAoD:Cartography",
+       "value": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorAoD:CaveTrail",
+    "name": "Cave Trail",
+    "namespace": "melvorAoD",
+    "slot_category": 3,
+    "base_interval_ms": 7000,
+    "base_xp": 40,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorAoD:Archaeology",
+      "level": 25
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorAoD:Large_Stone",
+      "quantity": 20
+     }
+    ],
+    "gp_cost": 150000,
+    "modifiers": {
+     "melvorAoD:mapChargePreservationChance": 5,
+     "skillXP": [
+      {
+       "skillID": "melvorAoD:Archaeology",
+       "value": 6
+      }
+     ],
+     "masteryXP": [
+      {
+       "skillID": "melvorAoD:Archaeology",
+       "value": 6
+      }
+     ]
+    }
+   },
+   {
+    "id": "melvorAoD:OceanDrifting",
+    "name": "Ocean Drifting",
+    "namespace": "melvorAoD",
+    "slot_category": 8,
+    "base_interval_ms": 10000,
+    "base_xp": 250,
+    "skill_requirements": [
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorAoD:Archaeology",
+      "level": 70
+     },
+     {
+      "type": "SkillLevel",
+      "skillID": "melvorAoD:Cartography",
+      "level": 70
+     }
+    ],
+    "item_costs": [
+     {
+      "id": "melvorD:Magic_Logs",
+      "quantity": 5000
+     },
+     {
+      "id": "melvorAoD:Paper",
+      "quantity": 5000
+     },
+     {
+      "id": "melvorAoD:Coral",
+      "quantity": 500
+     }
+    ],
+    "gp_cost": 10000000,
+    "modifiers": {
+     "mapRefinementCost": -10,
+     "skillItemDoublingChance": [
+      {
+       "skillID": "melvorAoD:Archaeology",
+       "value": 10
+      },
+      {
+       "skillID": "melvorAoD:Cartography",
+       "value": 10
+      }
+     ],
+     "skillInterval": [
+      {
+       "skillID": "melvorAoD:Cartography",
+       "value": -5
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "agility_pillars": {
+  "count": 6,
+  "items": [
+   {
+    "id": "melvorF:PillarofCombat",
+    "name": "Pillar of Combat",
+    "namespace": "melvorF",
+    "modifiers": {
+     "meleeEvasion": 10,
+     "rangedEvasion": 10,
+     "magicEvasion": 10,
+     "flatHPRegen": 1,
+     "flatSlayerAreaEffectNegation": 5,
+     "minHitBasedOnMaxHit": 5,
+     "flatMonsterRespawnInterval": -200
+    },
+    "item_costs": [
+     {
+      "id": "melvorD:Gold_Bar",
+      "quantity": 5000
+     },
+     {
+      "id": "melvorD:Silver_Bar",
+      "quantity": 5000
+     }
+    ]
+   },
+   {
+    "id": "melvorF:PillarofSkilling",
+    "name": "Pillar of Skilling",
+    "namespace": "melvorF",
+    "modifiers": {
+     "basePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Farming",
+       "realmID": "melvorD:Melvor",
+       "value": 10
+      }
+     ],
+     "globalItemDoublingChance": 3,
+     "skillPreservationChance": 3,
+     "masteryXP": 2
+    },
+    "item_costs": [
+     {
+      "id": "melvorD:Gold_Bar",
+      "quantity": 5000
+     },
+     {
+      "id": "melvorD:Silver_Bar",
+      "quantity": 5000
+     }
+    ]
+   },
+   {
+    "id": "melvorF:PillarofGenerosity",
+    "name": "Pillar of Generosity",
+    "namespace": "melvorF",
+    "modifiers": {
+     "bankSpace": 10,
+     "potionChargePreservationChance": 10,
+     "flatPotionCharges": 5,
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 10
+      }
+     ],
+     "summoningChargePreservationChance": 5
+    },
+    "item_costs": [
+     {
+      "id": "melvorD:Gold_Bar",
+      "quantity": 5000
+     },
+     {
+      "id": "melvorD:Silver_Bar",
+      "quantity": 5000
+     }
+    ]
+   },
+   {
+    "id": "melvorTotH:ElitePillarOfConflict",
+    "name": "Elite Pillar of Conflict",
+    "namespace": "melvorTotH",
+    "modifiers": {
+     "hitpointRegeneration": 50,
+     "lifesteal": 10,
+     "flatSlayerAreaEffectNegation": 35,
+     "prayerPointPreservationChance": 25,
+     "flatPrayerPointCost": -3,
+     "currencyGainFromCombat": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 350
+      }
+     ]
+    },
+    "item_costs": [
+     {
+      "id": "melvorTotH:Carrion_Logs",
+      "quantity": 10000
+     },
+     {
+      "id": "melvorTotH:Divinite_Bar",
+      "quantity": 10000
+     }
+    ]
+   },
+   {
+    "id": "melvorTotH:ElitePillarOfEndowment",
+    "name": "Elite Pillar of Endowment",
+    "namespace": "melvorTotH",
+    "modifiers": {
+     "potionChargePreservationChance": 20,
+     "summoningChargePreservationChance": 20,
+     "flatBasePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Summoning",
+       "value": 20
+      }
+     ],
+     "bankSpace": 50,
+     "consumablePreservationChance": 20
+    },
+    "item_costs": [
+     {
+      "id": "melvorTotH:Carrion_Logs",
+      "quantity": 10000
+     },
+     {
+      "id": "melvorTotH:Divinite_Bar",
+      "quantity": 10000
+     }
+    ]
+   },
+   {
+    "id": "melvorTotH:ElitePillarOfExpertise",
+    "name": "Elite Pillar of Expertise",
+    "namespace": "melvorTotH",
+    "modifiers": {
+     "masteryXP": [
+      {
+       "realmID": "melvorD:Melvor",
+       "value": 8
+      }
+     ],
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 40
+      }
+     ],
+     "globalItemDoublingChance": 8,
+     "skillInterval": -3
+    },
+    "item_costs": [
+     {
+      "id": "melvorTotH:Carrion_Logs",
+      "quantity": 10000
+     },
+     {
+      "id": "melvorTotH:Divinite_Bar",
+      "quantity": 10000
+     }
+    ]
+   }
+  ]
+ },
+ "astrology_constellations": {
+  "count": 16,
+  "items": [
+   {
+    "id": "melvorF:Deedree",
+    "name": "Deedree",
+    "namespace": "melvorF",
+    "level_required": 1,
+    "linked_skills": [
+     "melvorD:Woodcutting",
+     "melvorD:Farming"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Woodcutting"
+        },
+        {
+         "value": 1,
+         "skillID": "melvorD:Farming"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Deedree",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "masteryXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Woodcutting"
+        },
+        {
+         "value": 1,
+         "skillID": "melvorD:Farming"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Deedree",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillItemDoublingChance": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Woodcutting"
+        },
+        {
+         "value": 1,
+         "skillID": "melvorD:Farming"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Deedree",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "randomProductChance": [
+        {
+         "skillID": "melvorD:Woodcutting",
+         "itemID": "melvorD:Bird_Nest",
+         "value": 1
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Deedree",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "basePrimaryProductQuantity": [
+        {
+         "skillID": "melvorD:Farming",
+         "value": 1
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Deedree",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "additionalItemBasedOnPrimaryQuantityChance": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Woodcutting",
+         "actionID": "melvorD:Magic",
+         "itemID": "melvorF:Stardust"
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Deedree",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorF:Iridan",
+    "name": "Iridan",
+    "namespace": "melvorF",
+    "level_required": 10,
+    "linked_skills": [
+     "melvorD:Attack",
+     "melvorD:Smithing"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Attack"
+        }
+       ],
+       "accuracyRating": 1
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Iridan",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Smithing"
+        }
+       ],
+       "masteryXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Smithing"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Iridan",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillItemDoublingChance": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Smithing"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Iridan",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "flatHiddenSkillLevel": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Attack"
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Iridan",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillInterval": [
+        {
+         "value": -1,
+         "skillID": "melvorD:Smithing"
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Iridan",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "minHitBasedOnMaxHit": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Iridan",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorF:Ameria",
+    "name": "Ameria",
+    "namespace": "melvorF",
+    "level_required": 20,
+    "linked_skills": [
+     "melvorD:Fishing",
+     "melvorD:Firemaking"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Fishing"
+        },
+        {
+         "value": 1,
+         "skillID": "melvorD:Firemaking"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Ameria",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "masteryXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Fishing"
+        },
+        {
+         "value": 1,
+         "skillID": "melvorD:Firemaking"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Ameria",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillItemDoublingChance": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Fishing"
+        },
+        {
+         "value": 1,
+         "skillID": "melvorD:Firemaking"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Ameria",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "fishingSpecialChance": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Ameria",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillInterval": [
+        {
+         "value": -1,
+         "skillID": "melvorD:Fishing"
+        },
+        {
+         "value": -1,
+         "skillID": "melvorD:Firemaking"
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Ameria",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "additionalRandomSkillItemChance": [
+        {
+         "skillID": "melvorD:Firemaking",
+         "itemID": "melvorD:Diamond",
+         "value": 1
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Ameria",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorF:Terra",
+    "name": "Terra",
+    "namespace": "melvorF",
+    "level_required": 30,
+    "linked_skills": [
+     "melvorD:Strength",
+     "melvorD:Mining"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Strength"
+        }
+       ],
+       "accuracyRating": 1
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Terra",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Mining"
+        }
+       ],
+       "masteryXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Mining"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Terra",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillItemDoublingChance": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Mining"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Terra",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "flatHiddenSkillLevel": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Strength"
+        }
+       ],
+       "meleeStrengthBonus": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Terra",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "miningGemChance": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Terra",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "noMiningNodeDamageChance": [
+        {
+         "categoryID": "melvorD:Essence",
+         "value": 1
+        },
+        {
+         "categoryID": "melvorD:Ore",
+         "value": 1
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Terra",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorF:Vale",
+    "name": "Vale",
+    "namespace": "melvorF",
+    "level_required": 40,
+    "linked_skills": [
+     "melvorD:Hitpoints",
+     "melvorD:Cooking"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Hitpoints"
+        }
+       ],
+       "accuracyRating": 1
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Vale",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Cooking"
+        }
+       ],
+       "masteryXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Cooking"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Vale",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillItemDoublingChance": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Cooking"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Vale",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "skillInterval": [
+        {
+         "value": -1,
+         "skillID": "melvorD:Cooking"
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Vale",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "lifesteal": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Vale",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "foodHealingValue": 1,
+       "foodPreservationChance": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Vale",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorF:Syllia",
+    "name": "Syllia",
+    "namespace": "melvorF",
+    "level_required": 50,
+    "linked_skills": [
+     "melvorD:Ranged",
+     "melvorD:Fletching"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Ranged"
+        }
+       ],
+       "accuracyRating": 1
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Syllia",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Fletching"
+        }
+       ],
+       "masteryXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Fletching"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Syllia",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillItemDoublingChance": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Fletching"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Syllia",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "flatHiddenSkillLevel": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Ranged"
+        }
+       ],
+       "rangedStrengthBonus": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Syllia",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "ammoPreservationChance": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Syllia",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "additionalPrimaryProductChance": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Fletching"
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Syllia",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorF:Arachi",
+    "name": "Arachi",
+    "namespace": "melvorF",
+    "level_required": 60,
+    "linked_skills": [
+     "melvorD:Magic",
+     "melvorD:Runecrafting"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Magic"
+        }
+       ],
+       "accuracyRating": 1
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Arachi",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Runecrafting"
+        }
+       ],
+       "masteryXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Runecrafting"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Arachi",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillItemDoublingChance": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Runecrafting"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Arachi",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "flatHiddenSkillLevel": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Magic"
+        }
+       ],
+       "magicDamageBonus": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Arachi",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "altMagicRunePreservationChance": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Arachi",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "elementalRuneChance": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Arachi",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorF:Ko",
+    "name": "Ko",
+    "namespace": "melvorF",
+    "level_required": 70,
+    "linked_skills": [
+     "melvorD:Agility",
+     "melvorD:Thieving"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Thieving"
+        },
+        {
+         "value": 1,
+         "skillID": "melvorD:Agility"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Ko",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "masteryXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Thieving"
+        },
+        {
+         "value": 1,
+         "skillID": "melvorD:Agility"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Ko",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillItemDoublingChance": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Thieving"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Ko",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "skillInterval": [
+        {
+         "value": -1,
+         "skillID": "melvorD:Thieving"
+        },
+        {
+         "value": -1,
+         "skillID": "melvorD:Agility"
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Ko",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "currencyGain": [
+        {
+         "currencyID": "melvorD:GP",
+         "skillID": "melvorD:Agility",
+         "value": 1
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Ko",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "thievingStealth": 10
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Ko",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorF:Tellus",
+    "name": "Tellus",
+    "namespace": "melvorF",
+    "level_required": 80,
+    "linked_skills": [
+     "melvorD:Defence",
+     "melvorD:Slayer"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Defence"
+        }
+       ],
+       "flatHiddenSkillLevel": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Defence"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Tellus",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Slayer"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Tellus",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "currencyGainFromCombat": [
+        {
+         "currencyID": "melvorD:GP",
+         "value": 1
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Tellus",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "currencyGain": [
+        {
+         "currencyID": "melvorD:SlayerCoins",
+         "value": 1
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Tellus",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "damageDealtToMonstersInArea": [
+        {
+         "categoryID": "melvorF:SlayerAreas",
+         "value": 1
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Tellus",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "reflectDamage": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Tellus",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorF:Hyden",
+    "name": "Hyden",
+    "namespace": "melvorF",
+    "level_required": 90,
+    "linked_skills": [
+     "melvorD:Prayer",
+     "melvorD:Crafting"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Prayer"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Hyden",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Crafting"
+        }
+       ],
+       "masteryXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Crafting"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Hyden",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillItemDoublingChance": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Crafting"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Hyden",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "skillInterval": [
+        {
+         "value": -1,
+         "skillID": "melvorD:Crafting"
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Hyden",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "additionalPrimaryProductChance": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Crafting"
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Hyden",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "prayerPointPreservationChance": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Hyden",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorF:Qimican",
+    "name": "Qimican",
+    "namespace": "melvorF",
+    "level_required": 95,
+    "linked_skills": [
+     "melvorD:Summoning",
+     "melvorD:Herblore"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Herblore"
+        },
+        {
+         "value": 1,
+         "skillID": "melvorD:Summoning"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Qimican",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "masteryXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Herblore"
+        },
+        {
+         "value": 1,
+         "skillID": "melvorD:Summoning"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Qimican",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillItemDoublingChance": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Herblore"
+        },
+        {
+         "value": 1,
+         "skillID": "melvorD:Summoning"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Qimican",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "skillInterval": [
+        {
+         "value": -1,
+         "skillID": "melvorD:Herblore"
+        },
+        {
+         "value": -1,
+         "skillID": "melvorD:Summoning"
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Qimican",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "potionChargePreservationChance": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Qimican",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "summoningChargePreservationChance": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorF:Qimican",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorTotH:Variel",
+    "name": "Variel",
+    "namespace": "melvorTotH",
+    "level_required": 100,
+    "linked_skills": [
+     "melvorD:Astrology"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Astrology"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Variel",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "masteryXP": [
+        {
+         "value": 1,
+         "realmID": "melvorD:Melvor",
+         "skillID": "melvorD:Astrology"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Variel",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "randomProductChance": [
+        {
+         "skillID": "melvorD:Astrology",
+         "itemID": "melvorF:Stardust",
+         "value": 0.25
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Variel",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "skillInterval": [
+        {
+         "value": -1,
+         "skillID": "melvorD:Astrology"
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Variel",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "randomProductChance": [
+        {
+         "skillID": "melvorD:Astrology",
+         "itemID": "melvorF:Golden_Stardust",
+         "value": 0.5
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Variel",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "meteoriteLocationChance": 0.1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Variel",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorTotH:Haemir",
+    "name": "Haemir",
+    "namespace": "melvorTotH",
+    "level_required": 105,
+    "linked_skills": [
+     "melvorD:Township"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorD:Township"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Haemir",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "townshipResourceProduction": 1
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Haemir",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "townshipMaxStorage": 1
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Haemir",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "flatTownshipHappiness": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Haemir",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "townshipBuildingCost": -1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Haemir",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "flatTownshipEducation": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Haemir",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorTotH:Rosaniya",
+    "name": "Rosaniya",
+    "namespace": "melvorTotH",
+    "level_required": 110,
+    "linked_skills": [
+     "melvorD:Woodcutting",
+     "melvorD:Fishing",
+     "melvorD:Firemaking",
+     "melvorD:Cooking",
+     "melvorD:Mining",
+     "melvorD:Smithing",
+     "melvorD:Farming",
+     "melvorD:Thieving",
+     "melvorD:Fletching",
+     "melvorD:Crafting",
+     "melvorD:Runecrafting",
+     "melvorD:Herblore",
+     "melvorD:Agility",
+     "melvorD:Summoning",
+     "melvorD:Astrology",
+     "melvorD:Township"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "qualitySuperiorGemChance": 1
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Rosaniya",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "globalItemDoublingChance": 1
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Rosaniya",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "randomProductChance": [
+        {
+         "skillID": "melvorD:Astrology",
+         "itemID": "melvorF:Stardust",
+         "value": 0.5
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Rosaniya",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "currencyGain": [
+        {
+         "currencyID": "melvorD:GP",
+         "value": 1
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Rosaniya",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "bankSpace": 10
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Rosaniya",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "masteryXP": [
+        {
+         "realmID": "melvorD:Melvor",
+         "value": 1
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Rosaniya",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorTotH:Ashtar",
+    "name": "Ashtar",
+    "namespace": "melvorTotH",
+    "level_required": 115,
+    "linked_skills": [
+     "melvorD:Attack",
+     "melvorD:Strength",
+     "melvorD:Defence",
+     "melvorD:Hitpoints",
+     "melvorD:Ranged",
+     "melvorD:Magic",
+     "melvorD:Prayer",
+     "melvorD:Slayer"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "autoEatEfficiency": 1
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Ashtar",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "damageDealtToSlayerTasks": 1
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Ashtar",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "combatLootDoublingChance": 1
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Ashtar",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "attackInterval": -1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Ashtar",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "flatSlayerAreaEffectNegation": 1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Ashtar",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {},
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorTotH:Ashtar",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "melvorAoD:Nysa",
+    "name": "Nysa",
+    "namespace": "melvorAoD",
+    "level_required": 45,
+    "linked_skills": [
+     "melvorAoD:Archaeology",
+     "melvorAoD:Cartography"
+    ],
+    "standard_stars": [
+     {
+      "modifiers": {
+       "skillXP": [
+        {
+         "value": 1,
+         "skillID": "melvorAoD:Archaeology"
+        },
+        {
+         "value": 1,
+         "skillID": "melvorAoD:Cartography"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorAoD:Nysa",
+        "level": 1
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "melvorAoD:mapChargePreservationChance": 1
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorAoD:Nysa",
+        "level": 40
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "masteryXP": [
+        {
+         "value": 1,
+         "skillID": "melvorAoD:Archaeology"
+        }
+       ]
+      },
+      "max_count": 8,
+      "costs_per_level": [
+       10,
+       20,
+       40,
+       80,
+       160,
+       320,
+       640,
+       1280
+      ],
+      "total_cost_to_max": 2550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorAoD:Nysa",
+        "level": 80
+       }
+      ]
+     }
+    ],
+    "unique_stars": [
+     {
+      "modifiers": {
+       "mapRefinementCost": -1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorAoD:Nysa",
+        "level": 20
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "cartographySurveyInterval": -1
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorAoD:Nysa",
+        "level": 60
+       }
+      ]
+     },
+     {
+      "modifiers": {
+       "skillItemDoublingChance": [
+        {
+         "value": 1,
+         "skillID": "melvorAoD:Archaeology"
+        },
+        {
+         "value": 1,
+         "skillID": "melvorAoD:Cartography"
+        }
+       ]
+      },
+      "max_count": 5,
+      "costs_per_level": [
+       50,
+       100,
+       200,
+       400,
+       800
+      ],
+      "total_cost_to_max": 1550,
+      "unlock_requirements": [
+       {
+        "type": "MasteryLevel",
+        "skillID": "melvorD:Astrology",
+        "actionID": "melvorAoD:Nysa",
+        "level": 99
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "summoning_synergies": {
+  "count": 206,
+  "items": [
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:GolbinThief",
+     "melvorF:Occultist"
+    ],
+    "modifiers": {
+     "currencyGainOnMonsterKillBasedOnEvasion": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 15
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:GolbinThief",
+     "melvorF:Wolf"
+    ],
+    "modifiers": {
+     "flatCurrencyGainFromMonsterDrops": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 350
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:GolbinThief",
+     "melvorF:Minotaur"
+    ],
+    "modifiers": {
+     "currencyGainPerMeleeDamageDealt": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 2500
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:GolbinThief",
+     "melvorF:Centaur"
+    ],
+    "modifiers": {
+     "currencyGainPerRangedDamageDealt": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 2000
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:GolbinThief",
+     "melvorF:Witch"
+    ],
+    "modifiers": {
+     "currencyGainPerMagicDamageDealt": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 1500
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:GolbinThief",
+     "melvorF:Cyclops"
+    ],
+    "modifiers": {
+     "currencyGainFromSlayerTaskMonsterDrops": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 400
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:GolbinThief",
+     "melvorF:Yak"
+    ],
+    "modifiers": {
+     "flatCurrencyGainWhenHitBasedOnResistance": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "currencyID": "melvorD:GP",
+       "value": 30
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:GolbinThief",
+     "melvorF:Unicorn"
+    ],
+    "modifiers": {
+     "currencyGainOnRegenBasedOnHPGained": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 1000
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:GolbinThief",
+     "melvorF:Dragon"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Occultist",
+     "melvorF:Wolf"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Occultist",
+     "melvorF:Minotaur"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Occultist",
+     "melvorF:Centaur"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Occultist",
+     "melvorF:Witch"
+    ],
+    "modifiers": {
+     "flatMagicDefenceBonus": 100
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Occultist",
+     "melvorF:Cyclops"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Occultist",
+     "melvorF:Yak"
+    ],
+    "modifiers": {
+     "flatMeleeDefenceBonusBasedOnResistance": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": 1
+      }
+     ],
+     "flatRangedDefenceBonusBasedOnResistance": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": 1
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Occultist",
+     "melvorF:Unicorn"
+    ],
+    "modifiers": {
+     "hpRegenWhenEnemyHasMoreEvasion": 200
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Occultist",
+     "melvorF:Dragon"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Wolf",
+     "melvorF:Minotaur"
+    ],
+    "modifiers": {
+     "meleeLifesteal": 12
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Wolf",
+     "melvorF:Centaur"
+    ],
+    "modifiers": {
+     "rangedLifesteal": 8
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Wolf",
+     "melvorF:Witch"
+    ],
+    "modifiers": {
+     "magicLifesteal": 4
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Wolf",
+     "melvorF:Cyclops"
+    ],
+    "modifiers": {
+     "currencyGainFromLifesteal": [
+      {
+       "currencyID": "melvorD:SlayerCoins",
+       "value": 200
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Wolf",
+     "melvorF:Yak"
+    ],
+    "modifiers": {
+     "healingOnAttackBasedOnResistance": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": 5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Wolf",
+     "melvorF:Unicorn"
+    ],
+    "modifiers": {
+     "bleedLifesteal": 50
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Wolf",
+     "melvorF:Dragon"
+    ],
+    "modifiers": {
+     "summoningAttackLifesteal": 100
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Ent",
+     "melvorF:Mole"
+    ],
+    "modifiers": {
+     "additionalRandomGemChance": [
+      {
+       "skillID": "melvorD:Woodcutting",
+       "value": 5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "WoodcuttingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Ent",
+     "melvorF:Octopus"
+    ],
+    "modifiers": {
+     "randomProductChance": [
+      {
+       "skillID": "melvorD:Woodcutting",
+       "itemID": "melvorD:Bird_Nest",
+       "value": 6
+      }
+     ],
+     "bonusFishingSpecialChance": [
+      {
+       "realmID": "melvorD:Melvor",
+       "value": 6
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "WoodcuttingAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     },
+     {
+      "type": "FishingAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Ent",
+     "melvorF:Pig"
+    ],
+    "modifiers": {
+     "additionalPrimaryProductChance": [
+      {
+       "skillID": "melvorD:Cooking",
+       "realmID": "melvorD:Melvor",
+       "value": 30
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "CookingAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Ent",
+     "melvorF:Crow"
+    ],
+    "modifiers": {
+     "skillPreservationChance": [
+      {
+       "skillID": "melvorD:Runecrafting",
+       "subcategoryID": "melvorF:Staves",
+       "value": 20
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "RunecraftingAction",
+      "subcategoryIDs": [
+       "melvorF:Staves"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Ent",
+     "melvorF:Leprechaun"
+    ],
+    "modifiers": {
+     "summoningSynergy_Ent_Leprechaun": 2
+    },
+    "consumes_on": [
+     {
+      "type": "ThievingAction",
+      "succesful": true,
+      "npcIDs": [
+       "melvorF:LUMBERJACK"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Ent",
+     "melvorF:Monkey"
+    ],
+    "modifiers": {
+     "woodcuttingJewelryChance": 35
+    },
+    "consumes_on": [
+     {
+      "type": "WoodcuttingAction",
+      "nestGiven": true
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Ent",
+     "melvorF:Salamander"
+    ],
+    "modifiers": {
+     "flatBasePrimaryProductQuantityChance": [
+      {
+       "skillID": "melvorD:Woodcutting",
+       "realmID": "melvorD:Melvor",
+       "value": 20
+      },
+      {
+       "skillID": "melvorD:Smithing",
+       "realmID": "melvorD:Melvor",
+       "value": 20
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "WoodcuttingAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     },
+     {
+      "type": "SmithingAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Ent",
+     "melvorF:Bear"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "WoodcuttingAction",
+      "activePotionIDs": [
+       "melvorF:Bird_Nest_Potion_I",
+       "melvorF:Bird_Nest_Potion_II",
+       "melvorF:Bird_Nest_Potion_III",
+       "melvorF:Bird_Nest_Potion_IV"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Ent",
+     "melvorF:Devil"
+    ],
+    "modifiers": {
+     "woodcuttingXPAddedAsFiremakingXP": 15,
+     "halveWoodcuttingDoubleChance": 1
+    },
+    "consumes_on": [
+     {
+      "type": "WoodcuttingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Mole",
+     "melvorF:Octopus"
+    ],
+    "modifiers": {
+     "summoningSynergy_4_5": 15
+    },
+    "consumes_on": [
+     {
+      "type": "FishingAction"
+     },
+     {
+      "type": "MiningAction",
+      "actionGivesGems": true
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Mole",
+     "melvorF:Pig"
+    ],
+    "modifiers": {
+     "cookingSuccessCap": -25,
+     "flatCoalGainedOnCookingFailure": 100
+    },
+    "consumes_on": [
+     {
+      "type": "CookingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Mole",
+     "melvorF:Crow"
+    ],
+    "modifiers": {
+     "doubleItemsSkill": [
+      {
+       "skillID": "melvorD:Mining",
+       "actionID": "melvorD:Rune_Essence",
+       "value": 1
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "MiningAction",
+      "actionIDs": [
+       "melvorD:Rune_Essence"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Mole",
+     "melvorF:Leprechaun"
+    ],
+    "modifiers": {
+     "additionalRandomGemChance": [
+      {
+       "skillID": "melvorD:Thieving",
+       "actionID": "melvorF:MINER",
+       "value": 30
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "ThievingAction",
+      "succesful": true,
+      "npcIDs": [
+       "melvorF:MINER"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Mole",
+     "melvorF:Monkey"
+    ],
+    "modifiers": {
+     "doubleItemsSkill": [
+      {
+       "skillID": "melvorD:Mining",
+       "actionID": "melvorD:Silver_Ore",
+       "value": 1
+      },
+      {
+       "skillID": "melvorD:Mining",
+       "actionID": "melvorD:Gold_Ore",
+       "value": 1
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "MiningAction",
+      "actionIDs": [
+       "melvorD:Silver_Ore",
+       "melvorD:Gold_Ore"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Mole",
+     "melvorF:Salamander"
+    ],
+    "modifiers": {
+     "miningBarChance": 15
+    },
+    "consumes_on": [
+     {
+      "type": "MiningAction",
+      "smithedVersionExists": true
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Mole",
+     "melvorF:Bear"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "MiningAction",
+      "activePotionIDs": [
+       "melvorF:Perfect_Swing_Potion_I",
+       "melvorF:Perfect_Swing_Potion_II",
+       "melvorF:Perfect_Swing_Potion_III",
+       "melvorF:Perfect_Swing_Potion_IV"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Mole",
+     "melvorF:Devil"
+    ],
+    "modifiers": {
+     "additionalRandomSkillItemChance": [
+      {
+       "skillID": "melvorD:Firemaking",
+       "itemID": "melvorD:Diamond",
+       "value": 10
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FiremakingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Octopus",
+     "melvorF:Pig"
+    ],
+    "modifiers": {
+     "fishingCookedChance": 75
+    },
+    "consumes_on": [
+     {
+      "type": "FishingAction",
+      "cookedVersionExists": true
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Octopus",
+     "melvorF:Crow"
+    ],
+    "modifiers": {
+     "flatBasePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Runecrafting",
+       "subcategoryID": "melvorF:WaterComboRunes",
+       "value": 5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "RunecraftingAction",
+      "categoryIDs": [
+       "melvorF:CombinationRunes"
+      ],
+      "consumedItemIDs": [
+       "melvorD:Water_Rune"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Octopus",
+     "melvorF:Leprechaun"
+    ],
+    "modifiers": {
+     "summoningSynergy_Octopus_Leprechaun": 50
+    },
+    "consumes_on": [
+     {
+      "type": "ThievingAction",
+      "succesful": true,
+      "npcIDs": [
+       "melvorF:FISHERMAN"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Octopus",
+     "melvorF:Monkey"
+    ],
+    "modifiers": {
+     "additionalRandomGemChance": [
+      {
+       "skillID": "melvorD:Crafting",
+       "subcategoryID": "melvorF:Jewelry",
+       "value": 33
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "CraftingAction",
+      "categoryIDs": [
+       "melvorF:Necklaces",
+       "melvorF:Rings"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Octopus",
+     "melvorF:Salamander"
+    ],
+    "modifiers": {
+     "skillPreservationChance": [
+      {
+       "skillID": "melvorD:Smithing",
+       "categoryID": "melvorD:DragonGear",
+       "value": 15
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "SmithingAction",
+      "categoryIDs": [
+       "melvorD:DragonGear"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Octopus",
+     "melvorF:Bear"
+    ],
+    "modifiers": {
+     "potionCharges": [
+      {
+       "actionID": "melvorF:Fishermans_Potion",
+       "value": 200
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FishingAction",
+      "activePotionIDs": [
+       "melvorF:Fishermans_Potion_I",
+       "melvorF:Fishermans_Potion_II",
+       "melvorF:Fishermans_Potion_III",
+       "melvorF:Fishermans_Potion_IV"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Octopus",
+     "melvorF:Devil"
+    ],
+    "modifiers": {
+     "skillXP": [
+      {
+       "skillID": "melvorD:Cooking",
+       "value": -10
+      }
+     ],
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Cooking",
+       "realmID": "melvorD:Melvor",
+       "value": 5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "CookingAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Minotaur",
+     "melvorF:Centaur"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Minotaur",
+     "melvorF:Witch"
+    ],
+    "modifiers": {
+     "magicMinHitBasedOnMaxHitSlayerTask": 5
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Minotaur",
+     "melvorF:Cyclops"
+    ],
+    "modifiers": {
+     "meleeMinHitBasedOnMaxHitSlayerTask": 10
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Minotaur",
+     "melvorF:Yak"
+    ],
+    "modifiers": {
+     "flatResistanceAgainstRanged": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": 2
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Minotaur",
+     "melvorF:Unicorn"
+    ],
+    "modifiers": {
+     "flatHPRegenBasedOnMeleeMaxHit": 8
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Minotaur",
+     "melvorF:Dragon"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Centaur",
+     "melvorF:Witch"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Centaur",
+     "melvorF:Cyclops"
+    ],
+    "modifiers": {
+     "rangedMinHitBasedOnMaxHitSlayerTask": 10
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Centaur",
+     "melvorF:Yak"
+    ],
+    "modifiers": {
+     "flatResistanceAgainstMagic": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": 2
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Centaur",
+     "melvorF:Unicorn"
+    ],
+    "modifiers": {
+     "flatHPRegenBasedOnRangedMaxHit": 7
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Centaur",
+     "melvorF:Dragon"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Witch",
+     "melvorF:Cyclops"
+    ],
+    "modifiers": {
+     "currencyGainPerMagicDamageDealtOnSlayerTask": [
+      {
+       "currencyID": "melvorD:SlayerCoins",
+       "value": 40
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Witch",
+     "melvorF:Yak"
+    ],
+    "modifiers": {
+     "flatResistanceAgainstMelee": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": 2
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Witch",
+     "melvorF:Unicorn"
+    ],
+    "modifiers": {
+     "flatHPRegenBasedOnMagicMaxHit": 5
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Witch",
+     "melvorF:Dragon"
+    ],
+    "modifiers": {
+     "flatMagicMinHit": [
+      {
+       "subcategoryID": "melvorD:Air",
+       "value": 3
+      },
+      {
+       "subcategoryID": "melvorD:Water",
+       "value": 3
+      },
+      {
+       "subcategoryID": "melvorD:Earth",
+       "value": 3
+      },
+      {
+       "subcategoryID": "melvorD:Fire",
+       "value": 3
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Pig",
+     "melvorF:Crow"
+    ],
+    "modifiers": {
+     "skillPreservationChance": [
+      {
+       "skillID": "melvorD:Runecrafting",
+       "subcategoryID": "melvorF:Runes",
+       "value": 15
+      },
+      {
+       "skillID": "melvorD:Cooking",
+       "value": 15
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "CookingAction"
+     },
+     {
+      "type": "RunecraftingAction",
+      "categoryIDs": [
+       "melvorF:StandardRunes",
+       "melvorF:CombinationRunes"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Pig",
+     "melvorF:Leprechaun"
+    ],
+    "modifiers": {
+     "ignoreThievingDamage": [
+      {
+       "actionID": "melvorF:CHEF",
+       "value": 1
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "ThievingAction",
+      "succesful": false,
+      "npcIDs": [
+       "melvorF:CHEF"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Pig",
+     "melvorF:Monkey"
+    ],
+    "modifiers": {
+     "flatCraftingDragonhideCost": -1
+    },
+    "consumes_on": [
+     {
+      "type": "CraftingAction",
+      "categoryIDs": [
+       "melvorF:Dragonhide"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Pig",
+     "melvorF:Salamander"
+    ],
+    "modifiers": {
+     "flatSkillInterval": [
+      {
+       "skillID": "melvorD:Cooking",
+       "realmID": "melvorD:Melvor",
+       "value": -300
+      },
+      {
+       "skillID": "melvorD:Smithing",
+       "realmID": "melvorD:Melvor",
+       "value": -300
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "CookingAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     },
+     {
+      "type": "SmithingAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Pig",
+     "melvorF:Bear"
+    ],
+    "modifiers": {
+     "potionCharges": [
+      {
+       "actionID": "melvorF:Generous_Cook_Potion",
+       "value": 200
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "CookingAction",
+      "activePotionIDs": [
+       "melvorF:Generous_Cook_Potion_I",
+       "melvorF:Generous_Cook_Potion_II",
+       "melvorF:Generous_Cook_Potion_III",
+       "melvorF:Generous_Cook_Potion_IV"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Pig",
+     "melvorF:Devil"
+    ],
+    "modifiers": {
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Firemaking",
+       "value": 8
+      },
+      {
+       "skillID": "melvorD:Cooking",
+       "value": 8
+      }
+     ],
+     "skillPreservationChance": [
+      {
+       "skillID": "melvorD:Firemaking",
+       "value": -10
+      },
+      {
+       "skillID": "melvorD:Cooking",
+       "value": -10
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "CookingAction"
+     },
+     {
+      "type": "FiremakingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Crow",
+     "melvorF:Leprechaun"
+    ],
+    "modifiers": {
+     "flatAdditionalSkillItem": [
+      {
+       "skillID": "melvorD:Thieving",
+       "actionID": "melvorF:MINER",
+       "itemID": "melvorD:Rune_Essence",
+       "value": 1
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "ThievingAction",
+      "succesful": true,
+      "npcIDs": [
+       "melvorF:MINER"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Crow",
+     "melvorF:Monkey"
+    ],
+    "modifiers": {
+     "skillItemDoublingChance": [
+      {
+       "skillID": "melvorD:Crafting",
+       "categoryID": "melvorF:LeatherArmour",
+       "value": 20
+      },
+      {
+       "skillID": "melvorD:Crafting",
+       "categoryID": "melvorF:Dragonhide",
+       "value": 20
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "CraftingAction",
+      "categoryIDs": [
+       "melvorF:LeatherArmour",
+       "melvorF:Dragonhide"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Crow",
+     "melvorF:Salamander"
+    ],
+    "modifiers": {
+     "skillPreservationChance": [
+      {
+       "skillID": "melvorD:Smithing",
+       "value": 10
+      },
+      {
+       "skillID": "melvorD:Runecrafting",
+       "value": 10
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "RunecraftingAction"
+     },
+     {
+      "type": "SmithingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Crow",
+     "melvorF:Bear"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "RunecraftingAction",
+      "activePotionIDs": [
+       "melvorF:Elemental_Potion_I",
+       "melvorF:Elemental_Potion_II",
+       "melvorF:Elemental_Potion_III",
+       "melvorF:Elemental_Potion_IV"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Crow",
+     "melvorF:Devil"
+    ],
+    "modifiers": {
+     "flatAdditionalSkillItem": [
+      {
+       "skillID": "melvorD:Runecrafting",
+       "subcategoryID": "melvorF:ElementalRunes",
+       "itemID": "melvorD:Fire_Rune",
+       "value": 10
+      }
+     ],
+     "skillXP": [
+      {
+       "skillID": "melvorD:Runecrafting",
+       "value": -5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "RunecraftingAction",
+      "subcategoryIDs": [
+       "melvorF:ElementalRunes"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Leprechaun",
+     "melvorF:Monkey"
+    ],
+    "modifiers": {
+     "thievingAutoSellPrice": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 15
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "ThievingAction",
+      "succesful": true,
+      "commonDropObtained": true
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Leprechaun",
+     "melvorF:Salamander"
+    ],
+    "modifiers": {
+     "thievingMinerRandomBarChance": 50
+    },
+    "consumes_on": [
+     {
+      "type": "ThievingAction",
+      "succesful": true,
+      "commonDropObtained": true,
+      "npcIDs": [
+       "melvorF:MINER"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Leprechaun",
+     "melvorF:Bear"
+    ],
+    "modifiers": {
+     "thievingFarmerHerbSackChance": 3
+    },
+    "consumes_on": [
+     {
+      "type": "ThievingAction",
+      "succesful": true,
+      "commonDropObtained": true,
+      "npcIDs": [
+       "melvorF:BOB_THE_FARMER"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Leprechaun",
+     "melvorF:Devil"
+    ],
+    "modifiers": {
+     "summoningSynergy_Leprechaun_Devil": 1
+    },
+    "consumes_on": [
+     {
+      "type": "ThievingAction",
+      "succesful": true
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Cyclops",
+     "melvorF:Yak"
+    ],
+    "modifiers": {
+     "flatResistanceAgainstSlayerTasks": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": 3
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Cyclops",
+     "melvorF:Unicorn"
+    ],
+    "modifiers": {
+     "hitpointRegenerationAgainstSlayerTasks": 150
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Cyclops",
+     "melvorF:Dragon"
+    ],
+    "modifiers": {
+     "dragonBreathDamage": -25
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Yak",
+     "melvorF:Unicorn"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Yak",
+     "melvorF:Dragon"
+    ],
+    "modifiers": {
+     "effectImmunity": [
+      {
+       "effectGroupID": "melvorD:BurnDOT",
+       "value": 1
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Unicorn",
+     "melvorF:Dragon"
+    ],
+    "modifiers": {
+     "burnLifesteal": 100
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Monkey",
+     "melvorF:Salamander"
+    ],
+    "modifiers": {
+     "skillPreservationChance": [
+      {
+       "skillID": "melvorD:Crafting",
+       "subcategoryID": "melvorF:Jewelry",
+       "value": 33
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "CraftingAction",
+      "categoryIDs": [
+       "melvorF:Necklaces",
+       "melvorF:Rings"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Monkey",
+     "melvorF:Bear"
+    ],
+    "modifiers": {
+     "potionCharges": [
+      {
+       "actionID": "melvorF:Crafting_Potion",
+       "value": 100
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "CraftingAction",
+      "activePotionIDs": [
+       "melvorF:Crafting_Potion_I",
+       "melvorF:Crafting_Potion_II",
+       "melvorF:Crafting_Potion_III",
+       "melvorF:Crafting_Potion_IV"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Monkey",
+     "melvorF:Devil"
+    ],
+    "modifiers": {
+     "firemakingLogCurrencyGain": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 400
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FiremakingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Salamander",
+     "melvorF:Bear"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "SmithingAction",
+      "activePotionIDs": [
+       "melvorF:Seeing_Gold_Potion_I",
+       "melvorF:Seeing_Gold_Potion_II",
+       "melvorF:Seeing_Gold_Potion_III",
+       "melvorF:Seeing_Gold_Potion_IV"
+      ],
+      "actionIDs": [
+       "melvorD:Silver_Bar",
+       "melvorD:Gold_Bar"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Salamander",
+     "melvorF:Devil"
+    ],
+    "modifiers": {
+     "flatSmithingCoalCost": -3
+    },
+    "consumes_on": [
+     {
+      "type": "SmithingAction",
+      "consumedItemIDs": [
+       "melvorD:Coal_Ore"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorF",
+    "summon_ids": [
+     "melvorF:Bear",
+     "melvorF:Devil"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "FiremakingAction",
+      "activePotionIDs": [
+       "melvorF:Controlled_Heat_Potion_I",
+       "melvorF:Controlled_Heat_Potion_II",
+       "melvorF:Controlled_Heat_Potion_III",
+       "melvorF:Controlled_Heat_Potion_IV"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Ent",
+     "melvorTotH:Eagle"
+    ],
+    "modifiers": {
+     "flatSkillInterval": [
+      {
+       "skillID": "melvorD:Woodcutting",
+       "realmID": "melvorD:Melvor",
+       "value": -300
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "WoodcuttingAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Ent",
+     "melvorTotH:Owl"
+    ],
+    "modifiers": {
+     "skillMasteryXPPerDeedree": [
+      {
+       "skillID": "melvorD:Woodcutting",
+       "value": 1.5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "WoodcuttingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Ent",
+     "melvorTotH:Beaver"
+    ],
+    "modifiers": {
+     "woodcuttingArrowShaftChance": 30
+    },
+    "consumes_on": [
+     {
+      "type": "WoodcuttingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Ent",
+     "melvorTotH:Fox"
+    ],
+    "modifiers": {
+     "nonShardSummoningCostReduction": [
+      {
+       "actionID": "melvorF:Ent",
+       "value": 30
+      },
+      {
+       "actionID": "melvorTotH:Fox",
+       "value": 30
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "SummoningAction",
+      "actionIDs": [
+       "melvorF:Ent",
+       "melvorTotH:Fox"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Mole",
+     "melvorTotH:Eagle"
+    ],
+    "modifiers": {
+     "flatSkillInterval": [
+      {
+       "skillID": "melvorD:Mining",
+       "realmID": "melvorD:Melvor",
+       "value": -200
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "MiningAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Mole",
+     "melvorTotH:Owl"
+    ],
+    "modifiers": {
+     "additionalPrimaryProductChance": [
+      {
+       "skillID": "melvorD:Mining",
+       "actionID": "melvorTotH:Meteorite_Ore",
+       "value": 30
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "MiningAction",
+      "actionIDs": [
+       "melvorTotH:Meteorite_Ore"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Mole",
+     "melvorTotH:Beaver"
+    ],
+    "modifiers": {
+     "additional5PrimaryProductChance": [
+      {
+       "skillID": "melvorD:Fletching",
+       "categoryID": "melvorF:Arrows",
+       "value": 100
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FletchingAction",
+      "isArrows": true
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Mole",
+     "melvorTotH:Fox"
+    ],
+    "modifiers": {
+     "qualitySuperiorGemChance": 10
+    },
+    "consumes_on": [
+     {
+      "type": "MiningAction",
+      "actionGivesSuperiorGems": true
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Octopus",
+     "melvorTotH:Eagle"
+    ],
+    "modifiers": {
+     "flatSkillInterval": [
+      {
+       "skillID": "melvorD:Fishing",
+       "realmID": "melvorD:Melvor",
+       "value": -500
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FishingAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Octopus",
+     "melvorTotH:Owl"
+    ],
+    "modifiers": {
+     "skillMasteryXPPerAmeria": [
+      {
+       "skillID": "melvorD:Fishing",
+       "value": 1.5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FishingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Octopus",
+     "melvorTotH:Beaver"
+    ],
+    "modifiers": {
+     "additional2PrimaryProductChance": [
+      {
+       "skillID": "melvorD:Fletching",
+       "subcategoryID": "melvorF:UnstrungBows",
+       "value": 30
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FletchingAction",
+      "isUnstrungBows": true
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Octopus",
+     "melvorTotH:Fox"
+    ],
+    "modifiers": {
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Summoning",
+       "actionID": "melvorF:Octopus",
+       "value": -5
+      }
+     ],
+     "nonShardSummoningCostReduction": [
+      {
+       "actionID": "melvorF:Octopus",
+       "value": 20
+      },
+      {
+       "actionID": "melvorTotH:Fox",
+       "value": 20
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "SummoningAction",
+      "actionIDs": [
+       "melvorF:Octopus",
+       "melvorTotH:Fox"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Pig",
+     "melvorTotH:Eagle"
+    ],
+    "modifiers": {
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Cooking",
+       "realmID": "melvorD:Melvor",
+       "value": -10
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "CookingAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Pig",
+     "melvorTotH:Owl"
+    ],
+    "modifiers": {
+     "skillMasteryXPPerVale": [
+      {
+       "skillID": "melvorD:Cooking",
+       "value": 1.5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "CookingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Pig",
+     "melvorTotH:Beaver"
+    ],
+    "modifiers": {
+     "passiveCookingInterval": -15
+    },
+    "consumes_on": [
+     {
+      "type": "CookingAction",
+      "isPassiveCooking": true
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Pig",
+     "melvorTotH:Fox"
+    ],
+    "modifiers": {
+     "nonShardSummoningCostReduction": [
+      {
+       "actionID": "melvorF:Pig",
+       "value": 30
+      },
+      {
+       "actionID": "melvorTotH:Fox",
+       "value": 30
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "SummoningAction",
+      "actionIDs": [
+       "melvorF:Pig",
+       "melvorTotH:Fox"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Bear",
+     "melvorTotH:Eagle"
+    ],
+    "modifiers": {
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Herblore",
+       "realmID": "melvorD:Melvor",
+       "value": -10
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "HerbloreAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Bear",
+     "melvorTotH:Owl"
+    ],
+    "modifiers": {
+     "skillMasteryXPPerQimican": [
+      {
+       "skillID": "melvorD:Herblore",
+       "value": 1.5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "HerbloreAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Bear",
+     "melvorTotH:Beaver"
+    ],
+    "modifiers": {
+     "skillPreservationCap": [
+      {
+       "skillID": "melvorD:Fletching",
+       "realmID": "melvorD:Melvor",
+       "value": 5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FletchingAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Bear",
+     "melvorTotH:Fox"
+    ],
+    "modifiers": {
+     "skillPreservationCap": [
+      {
+       "skillID": "melvorD:Herblore",
+       "realmID": "melvorD:Melvor",
+       "value": 5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "HerbloreAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Leprechaun",
+     "melvorTotH:Eagle"
+    ],
+    "modifiers": {
+     "currencyGainFromAgilityPerActiveObstacle": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 30
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "AgilityAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Leprechaun",
+     "melvorTotH:Owl"
+    ],
+    "modifiers": {
+     "skillMasteryXPPerKo": [
+      {
+       "skillID": "melvorD:Thieving",
+       "value": 1.5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "ThievingAction",
+      "succesful": true
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Leprechaun",
+     "melvorTotH:Beaver"
+    ],
+    "modifiers": {
+     "fletchingItemToCurrencyChance": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 20
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FletchingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Leprechaun",
+     "melvorTotH:Fox"
+    ],
+    "modifiers": {
+     "flatBasePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Summoning",
+       "actionID": "melvorF:Leprechaun",
+       "value": 10
+      }
+     ],
+     "nonShardSummoningCostReduction": [
+      {
+       "actionID": "melvorF:Leprechaun",
+       "value": -100
+      },
+      {
+       "actionID": "melvorTotH:Fox",
+       "value": -100
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "SummoningAction",
+      "actionIDs": [
+       "melvorF:Leprechaun"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Crow",
+     "melvorTotH:Eagle"
+    ],
+    "modifiers": {
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Runecrafting",
+       "realmID": "melvorD:Melvor",
+       "value": -10
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "RunecraftingAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Crow",
+     "melvorTotH:Owl"
+    ],
+    "modifiers": {
+     "skillMasteryXPPerArachi": [
+      {
+       "skillID": "melvorD:Runecrafting",
+       "value": 1.5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "RunecraftingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Crow",
+     "melvorTotH:Beaver"
+    ],
+    "modifiers": {
+     "additionalPrimaryProductChance": [
+      {
+       "skillID": "melvorD:Fletching",
+       "categoryID": "melvorF:Crossbows",
+       "value": 100
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FletchingAction",
+      "categoryIDs": [
+       "melvorF:Crossbows"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Crow",
+     "melvorTotH:Fox"
+    ],
+    "modifiers": {
+     "nonShardSummoningCostReduction": [
+      {
+       "actionID": "melvorF:Crow",
+       "value": 30
+      },
+      {
+       "actionID": "melvorTotH:Fox",
+       "value": 30
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "SummoningAction",
+      "actionIDs": [
+       "melvorF:Crow",
+       "melvorTotH:Fox"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Salamander",
+     "melvorTotH:Eagle"
+    ],
+    "modifiers": {
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Smithing",
+       "realmID": "melvorD:Melvor",
+       "value": -20
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "SmithingAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Salamander",
+     "melvorTotH:Owl"
+    ],
+    "modifiers": {
+     "skillMasteryXPPerIridan": [
+      {
+       "skillID": "melvorD:Smithing",
+       "value": 1.5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "SmithingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Salamander",
+     "melvorTotH:Beaver"
+    ],
+    "modifiers": {
+     "additional3PrimaryProductChance": [
+      {
+       "skillID": "melvorD:Fletching",
+       "categoryID": "melvorF:Javelins",
+       "value": 30
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FletchingAction",
+      "categoryIDs": [
+       "melvorF:Javelins"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Salamander",
+     "melvorTotH:Fox"
+    ],
+    "modifiers": {
+     "basePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Summoning",
+       "actionID": "melvorF:Salamander",
+       "value": 200
+      }
+     ],
+     "disableSalamanderItemReduction": 1
+    },
+    "consumes_on": [
+     {
+      "type": "SummoningAction",
+      "actionIDs": [
+       "melvorF:Salamander",
+       "melvorTotH:Fox"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Monkey",
+     "melvorTotH:Eagle"
+    ],
+    "modifiers": {
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Agility",
+       "realmID": "melvorD:Melvor",
+       "value": -10
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "AgilityAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Monkey",
+     "melvorTotH:Owl"
+    ],
+    "modifiers": {
+     "skillMasteryXPPerHyden": [
+      {
+       "skillID": "melvorD:Crafting",
+       "value": 1.5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "CraftingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Monkey",
+     "melvorTotH:Beaver"
+    ],
+    "modifiers": {
+     "flatBasePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Fletching",
+       "categoryID": "melvorF:Javelins",
+       "value": 1
+      }
+     ],
+     "skillCostReduction": [
+      {
+       "skillID": "melvorD:Fletching",
+       "categoryID": "melvorF:Javelins",
+       "value": -100
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FletchingAction",
+      "categoryIDs": [
+       "melvorF:Javelins"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Monkey",
+     "melvorTotH:Fox"
+    ],
+    "modifiers": {
+     "flatBasePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Summoning",
+       "actionID": "melvorF:Monkey",
+       "value": 15
+      },
+      {
+       "skillID": "melvorD:Summoning",
+       "actionID": "melvorTotH:Fox",
+       "value": 15
+      }
+     ],
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Summoning",
+       "actionID": "melvorF:Monkey",
+       "value": -5
+      },
+      {
+       "skillID": "melvorD:Summoning",
+       "actionID": "melvorTotH:Fox",
+       "value": -5
+      }
+     ],
+     "nonShardSummoningCostReduction": [
+      {
+       "actionID": "melvorF:Monkey",
+       "value": -50
+      },
+      {
+       "actionID": "melvorTotH:Fox",
+       "value": -50
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "SummoningAction",
+      "actionIDs": [
+       "melvorF:Monkey",
+       "melvorTotH:Fox"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Devil",
+     "melvorTotH:Eagle"
+    ],
+    "modifiers": {
+     "currencyGain": [
+      {
+       "currencyID": "melvorD:GP",
+       "skillID": "melvorD:Agility",
+       "value": -100
+      }
+     ],
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Agility",
+       "realmID": "melvorD:Melvor",
+       "value": 10
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "AgilityAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Devil",
+     "melvorTotH:Owl"
+    ],
+    "modifiers": {
+     "flatBaseRandomProductQuantity": [
+      {
+       "skillID": "melvorD:Astrology",
+       "itemID": "melvorF:Stardust",
+       "value": 4
+      }
+     ],
+     "randomProductChance": [
+      {
+       "skillID": "melvorD:Astrology",
+       "itemID": "melvorF:Golden_Stardust",
+       "value": -1000
+      }
+     ],
+     "disableGoldenStardustDrops": 1
+    },
+    "consumes_on": [
+     {
+      "type": "AstrologyAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Devil",
+     "melvorTotH:Beaver"
+    ],
+    "modifiers": {
+     "flatBasePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Fletching",
+       "categoryID": "melvorF:Bolts",
+       "value": 2
+      }
+     ],
+     "skillItemDoublingChance": [
+      {
+       "skillID": "melvorD:Fletching",
+       "value": -10
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FletchingAction",
+      "categoryIDs": [
+       "melvorF:Bolts"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Devil",
+     "melvorTotH:Fox"
+    ],
+    "modifiers": {
+     "masteryXP": [
+      {
+       "skillID": "melvorD:Summoning",
+       "realmID": "melvorD:Melvor",
+       "value": 100
+      }
+     ],
+     "skillXP": [
+      {
+       "skillID": "melvorD:Summoning",
+       "value": 100
+      }
+     ],
+     "flatBasePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Summoning",
+       "value": -1000
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "SummoningAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Eagle",
+     "melvorTotH:Owl"
+    ],
+    "modifiers": {
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Astrology",
+       "realmID": "melvorD:Melvor",
+       "value": -10
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "AstrologyAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Eagle",
+     "melvorTotH:Beaver"
+    ],
+    "modifiers": {
+     "flatSkillInterval": [
+      {
+       "skillID": "melvorD:Fletching",
+       "categoryID": "melvorF:Arrows",
+       "value": -300
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FletchingAction",
+      "isArrows": true
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Eagle",
+     "melvorTotH:Fox"
+    ],
+    "modifiers": {
+     "skillInterval": [
+      {
+       "skillID": "melvorD:Summoning",
+       "realmID": "melvorD:Melvor",
+       "value": -10
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "SummoningAction",
+      "realms": [
+       "melvorD:Melvor"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Owl",
+     "melvorTotH:Beaver"
+    ],
+    "modifiers": {
+     "skillMasteryXPPerSyllia": [
+      {
+       "skillID": "melvorD:Fletching",
+       "value": 1.5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "FletchingAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Owl",
+     "melvorTotH:Fox"
+    ],
+    "modifiers": {
+     "skillMasteryXPPerQimican": [
+      {
+       "skillID": "melvorD:Summoning",
+       "value": 1.5
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "SummoningAction"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Beaver",
+     "melvorTotH:Fox"
+    ],
+    "modifiers": {
+     "flatBasePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Summoning",
+       "actionID": "melvorTotH:Beaver",
+       "value": 5
+      },
+      {
+       "skillID": "melvorD:Summoning",
+       "actionID": "melvorTotH:Fox",
+       "value": 5
+      }
+     ],
+     "nonShardSummoningCostReduction": [
+      {
+       "actionID": "melvorTotH:Beaver",
+       "value": 15
+      },
+      {
+       "actionID": "melvorTotH:Fox",
+       "value": 15
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "SummoningAction",
+      "actionIDs": [
+       "melvorTotH:Beaver",
+       "melvorTotH:Fox"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:GolbinThief",
+     "melvorTotH:LightningSpirit"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:GolbinThief",
+     "melvorTotH:Siren"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:GolbinThief",
+     "melvorTotH:Spider"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:GolbinThief",
+     "melvorTotH:Spectre"
+    ],
+    "modifiers": {
+     "currencyGainBasedOnSummonDamage": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 1000
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Wolf",
+     "melvorTotH:LightningSpirit"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Wolf",
+     "melvorTotH:Siren"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Wolf",
+     "melvorTotH:Spider"
+    ],
+    "modifiers": {
+     "poisonLifesteal": 50
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Wolf",
+     "melvorTotH:Spectre"
+    ],
+    "modifiers": {
+     "healingOnHitBasedOnTargetResistance": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": 10
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Witch",
+     "melvorTotH:LightningSpirit"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Witch",
+     "melvorTotH:Siren"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Witch",
+     "melvorTotH:Spider"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Witch",
+     "melvorTotH:Spectre"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Minotaur",
+     "melvorTotH:LightningSpirit"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Minotaur",
+     "melvorTotH:Siren"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Minotaur",
+     "melvorTotH:Spider"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Minotaur",
+     "melvorTotH:Spectre"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Centaur",
+     "melvorTotH:LightningSpirit"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Centaur",
+     "melvorTotH:Siren"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Centaur",
+     "melvorTotH:Spider"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Centaur",
+     "melvorTotH:Spectre"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Cyclops",
+     "melvorTotH:LightningSpirit"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Cyclops",
+     "melvorTotH:Siren"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Cyclops",
+     "melvorTotH:Spider"
+    ],
+    "modifiers": {
+     "currencyGainPerPoisonDamage": [
+      {
+       "currencyID": "melvorD:SlayerCoins",
+       "value": 2000
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Cyclops",
+     "melvorTotH:Spectre"
+    ],
+    "modifiers": {
+     "flatCurrencyGainOnHitOnSlayerTask": [
+      {
+       "currencyID": "melvorD:SlayerCoins",
+       "damageTypeID": "melvorD:Normal",
+       "value": 1
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Occultist",
+     "melvorTotH:LightningSpirit"
+    ],
+    "modifiers": {
+     "decreaseEnemyEvasionOnStun": 100
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Occultist",
+     "melvorTotH:Siren"
+    ],
+    "modifiers": {
+     "decreaseEnemyEvasionOnSleep": 100
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Occultist",
+     "melvorTotH:Spider"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Occultist",
+     "melvorTotH:Spectre"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Yak",
+     "melvorTotH:LightningSpirit"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Yak",
+     "melvorTotH:Siren"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Yak",
+     "melvorTotH:Spider"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Yak",
+     "melvorTotH:Spectre"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Unicorn",
+     "melvorTotH:LightningSpirit"
+    ],
+    "modifiers": {
+     "healWhenStunned": 10
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Unicorn",
+     "melvorTotH:Siren"
+    ],
+    "modifiers": {
+     "healWhenSlept": 20
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Unicorn",
+     "melvorTotH:Spider"
+    ],
+    "modifiers": {
+     "effectIgnoreChance": [
+      {
+       "effectGroupID": "melvorD:PoisonDOT",
+       "value": 100
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Unicorn",
+     "melvorTotH:Spectre"
+    ],
+    "modifiers": {
+     "healingOnHitBasedOnTargetResistance": [
+      {
+       "damageTypeID": "melvorD:Normal",
+       "value": 20
+      }
+     ],
+     "disableLifesteal": 1
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Dragon",
+     "melvorTotH:LightningSpirit"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Dragon",
+     "melvorTotH:Siren"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Dragon",
+     "melvorTotH:Spider"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorF:Dragon",
+     "melvorTotH:Spectre"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:LightningSpirit",
+     "melvorTotH:Siren"
+    ],
+    "modifiers": {
+     "stunAvoidChance": 10,
+     "effectIgnoreChance": [
+      {
+       "effectGroupID": "melvorD:Sleep",
+       "value": 10
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:LightningSpirit",
+     "melvorTotH:Spider"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:LightningSpirit",
+     "melvorTotH:Spectre"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Siren",
+     "melvorTotH:Spider"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Siren",
+     "melvorTotH:Spectre"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Spider",
+     "melvorTotH:Spectre"
+    ],
+    "modifiers": {
+     "summoningMaxHit": 100
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Fox",
+     "melvorF:GolbinThief"
+    ],
+    "modifiers": {
+     "flatCurrencyGainOnEnemyHit": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 60
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Fox",
+     "melvorF:Occultist"
+    ],
+    "modifiers": {
+     "evasion": 10
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Fox",
+     "melvorF:Wolf"
+    ],
+    "modifiers": {
+     "doubleLifesteal": 1,
+     "autoEatEfficiency": -10,
+     "autoEatHPLimit": -10
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Fox",
+     "melvorF:Minotaur"
+    ],
+    "modifiers": {
+     "meleeCritChance": 5
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Fox",
+     "melvorF:Centaur"
+    ],
+    "modifiers": {
+     "rangedCritChance": 5
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Fox",
+     "melvorF:Witch"
+    ],
+    "modifiers": {
+     "magicCritChance": 5
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Fox",
+     "melvorF:Cyclops"
+    ],
+    "modifiers": {
+     "flatBasePrimaryProductQuantity": [
+      {
+       "skillID": "melvorD:Summoning",
+       "actionID": "melvorF:Cyclops",
+       "value": 5
+      }
+     ],
+     "nonShardSummoningCostReduction": [
+      {
+       "actionID": "melvorF:Cyclops",
+       "value": 15
+      },
+      {
+       "actionID": "melvorTotH:Fox",
+       "value": 15
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "SummoningAction",
+      "actionIDs": [
+       "melvorF:Cyclops",
+       "melvorTotH:Fox"
+      ]
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Fox",
+     "melvorF:Yak"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Fox",
+     "melvorF:Unicorn"
+    ],
+    "modifiers": {
+     "flatHPRegen": 1.5
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerHitpointRegeneration"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Fox",
+     "melvorF:Dragon"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Fox",
+     "melvorTotH:LightningSpirit"
+    ],
+    "modifiers": {
+     "stunDurationIncreaseChance": 10
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Fox",
+     "melvorTotH:Siren"
+    ],
+    "modifiers": {
+     "sleepDurationIncreaseChance": 10
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Fox",
+     "melvorTotH:Spider"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorTotH",
+    "summon_ids": [
+     "melvorTotH:Fox",
+     "melvorTotH:Spectre"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorAoD",
+    "summon_ids": [
+     "melvorAoD:Barrier",
+     "melvorF:Wolf"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorAoD",
+    "summon_ids": [
+     "melvorAoD:Barrier",
+     "melvorF:Witch"
+    ],
+    "modifiers": {
+     "flatBarrierSummonDamageMagic": 9
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorAoD",
+    "summon_ids": [
+     "melvorAoD:Barrier",
+     "melvorF:Minotaur"
+    ],
+    "modifiers": {
+     "flatBarrierSummonDamageMelee": 9
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorAoD",
+    "summon_ids": [
+     "melvorAoD:Barrier",
+     "melvorF:Centaur"
+    ],
+    "modifiers": {
+     "flatBarrierSummonDamageRanged": 9
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorAoD",
+    "summon_ids": [
+     "melvorAoD:Barrier",
+     "melvorF:Cyclops"
+    ],
+    "modifiers": {
+     "barrierSummonDamage": 20
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorAoD",
+    "summon_ids": [
+     "melvorAoD:Barrier",
+     "melvorF:Occultist"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorAoD",
+    "summon_ids": [
+     "melvorAoD:Barrier",
+     "melvorF:Yak"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorAoD",
+    "summon_ids": [
+     "melvorAoD:Barrier",
+     "melvorF:Unicorn"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorAoD",
+    "summon_ids": [
+     "melvorAoD:Barrier",
+     "melvorF:Dragon"
+    ],
+    "modifiers": {},
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   },
+   {
+    "namespace": "melvorAoD",
+    "summon_ids": [
+     "melvorAoD:Barrier",
+     "melvorF:GolbinThief"
+    ],
+    "modifiers": {
+     "currencyGainBasedOnBarrierDamage": [
+      {
+       "currencyID": "melvorD:GP",
+       "value": 1000
+      }
+     ]
+    },
+    "consumes_on": [
+     {
+      "type": "PlayerSummonAttack"
+     }
+    ]
+   }
+  ]
+ }
+}
